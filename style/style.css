@@ -298,7 +298,7 @@ display: flex;
   .hamburger {
       background: rgba(255, 255, 255, 0);
       position: relative;
-      display: block;
+display: none;
       text-align: center;
       padding: 13px 0;
       width: 50px;
@@ -307,6 +307,7 @@ display: flex;
     top: 0;
       z-index: 1000;
     cursor: pointer;
+    transition: .5s;
   }
   
   .hamburger:before {
@@ -334,11 +335,11 @@ display: flex;
   }
   
   .hamburger:hover:before {
-    color: rgb(20, 20, 20);
+    color: rgb(183, 144, 255);
   }
 
   .dark .hamburger:hover:before {
-    color: rgb(223, 223, 223);
+    color: rgb(183, 144, 255);
   }
   
   .primary-nav .phone_menu li {
@@ -697,6 +698,10 @@ display: flex;
 
   #page_button {
     width: 50%; 
+  }
+
+  .hamburger {
+    display: block;
   }
   }
 
