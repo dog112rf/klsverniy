@@ -11,9 +11,39 @@
     href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
   />
 </head>
-<body>
+<body id="body">
+    <div class="phone_header_menu">
+        <div class="primary-nav">
+            <button href="#" class="hamburger open-panel nav-toggle">
+        <span class="screen-reader-text">Menu</span>
+        </button>
+            <nav role="navigation" class="phone_menu hidden">
+                <div class="overflow-container">
+                    <ul class="menu-dropdown">
+                        <li><a href="javascript:void(0);" class="menu_button" id="menu_button_1">Главная</a></li>
+                        <li><a href="javascript:void(0);" class="menu_button" id="menu_button_2">Вступить в клуб</a></li>
+                        <li><a href="javascript:void(0);" class="menu_button" id="menu_button_3">Услуги</a></li>
+                        <li><a href="javascript:void(0);" class="menu_button" id="menu_button_4">Курсы</a></li>
+                        <li><a href="javascript:void(0);" class="menu_button" id="menu_button_5">Контакты</a></li>
+                        <li><a href="javascript:void(0);" class="menu_button" id="menu_button_6">Полезно</a></li>
+                        <li><a href="javascript:void(0);" class="menu_button" id="menu_button_7">Хендлинг зал</a></li>
+                        <li><a href="javascript:void(0);" class="menu_button" id="menu_button_8">Привелегии клуба</a></li>
+                        <li><a href="javascript:void(0);" class="menu_button" id="menu_button_9">Наши чемпионы</a></li>   
+                        <li><a href="javascript:void(0);" class="menu_button" id="menu_button_10">Карта</a></li>
+                        <li><div class="social_container">
+                            <a href="javascript:void(0);" class="social_button" id="theme_changer"><img src="/assets/moon.png" id="theme_changer_image" alt="" class="social_icon"></a>
+                            <a href="javascript:void(0);" class="social_button" id="theme_changer_2"><img src="/assets/moon.png" id="theme_changer_image_2" alt="" class="social_icon"></a>
+                            <a href="vk.com" class="social_button"><img src="/assets/vk.png" alt="" class="social_icon"></a>
+                            <a href="javascript:void(0);" class="social_button"><img src="/assets/instagram.png" alt="" class="social_icon"></a>
+                            <a href="javascript:void(0);" class="social_button"><img src="/assets/facebook.png" alt="" class="social_icon"></a>
+                        </div></li>
+                    </ul>
+                </div>
+            </nav>      
+        </div>
+    </div>
     <header>
-        <div class="header_image_container" style="width: 7%;">
+        <div class="header_image_container">
             <img src="https://pp.userapi.com/c850216/v850216638/155207/CSZg2kqi964.jpg" alt="">
         </div>
         <div class="header_text_container">
@@ -21,14 +51,17 @@
             <h3 class="site_adress">г. Нефтекамск, ул. Строителей, д. 89 "А", +7 (905) 002-00-72</h3>
         </div>
         <div class="header_logo_container">
-        <div class="header_image_container" style="width: 80%;">
-            <img src="https://logowiki.net/uploads/logo/f/fci.svg" alt="">
+        <div class="header_image_container" id="secondary_image">
+            <img src="/assets/FCI.png" alt="" id="FCI_1">
+            <img src="/assets/FCI2.png" alt="" id="FCI_2">
         </div>
-        <div class="header_image_container" style="width: 70%;">
-            <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/sd1b8856e6b3a025d/image/i70babc0226e24b42/version/1533403581/image.png" alt="">
+        <div class="header_image_container" id="secondary_image">
+            <img src="/assets/RFSS.png" alt="" id="RFSS_1">
+            <img src="/assets/RFSS2.png" alt="" id="RFSS_2">
         </div>
-        <div class="header_image_container" style="width: 70%;">
-            <img src="https://kk.convdocs.org/pars_docs/refs/33/32705/32705_html_m8070dff.png" alt="">
+        <div class="header_image_container" id="secondary_image">
+            <img src="/assets/RKF.png" alt="" id="RKF_1">
+            <img src="/assets/RKF2.png" alt="" id="RKF_2">
         </div>
     </div>
     </header>
@@ -45,7 +78,13 @@
             <a href="javascript:void(0);" class="menu_button" id="menu_button_9">Наши чемпионы</a>
             <a href="javascript:void(0);" class="menu_button" id="menu_button_10">Карта</a>
         </nav>
-        <a href="javascript:void(0);" class="theme_changer">sss<img src="" alt="" class="theme_changer_icon"></a>
+        <div class="social_container">
+            <a href="javascript:void(0);" class="social_button" id="theme_changer"><img src="/assets/moon.png" id="theme_changer_image" alt="" class="social_icon"></a>
+            <a href="javascript:void(0);" class="social_button" id="theme_changer_2"><img src="/assets/moon.png" id="theme_changer_image_2" alt="" class="social_icon"></a>
+            <a href="vk.com" class="social_button"><img src="/assets/vk.png" alt="" class="social_icon"></a>
+            <a href="javascript:void(0);" class="social_button"><img src="/assets/instagram.png" alt="" class="social_icon"></a>
+            <a href="javascript:void(0);" class="social_button"><img src="/assets/facebook.png" alt="" class="social_icon"></a>
+        </div>
     </div>
     <body>
         <div class="carousel">
@@ -110,7 +149,7 @@
                 <h4 class="page_text_block_content">В клуб может вступить любой владелец собак независимо от породы.</h4>
                 <h4 class="page_text_block_content">По всем вопросам и для вступления в клуб обращаться по <img src="/assets/phone.png" alt="" class="text_prefix"> 8-905-002-00-72 (WhatsApp)</h4>
             </div>
-            <div class="page_text_block" style="width: 15%; text-align: center;">
+            <div class="page_text_block" id="page_button">
                 <a href="/assets/Zayavlenie_na_vstuplenie_v_klub_fiz_litso.pdf" class="download_button" download>Скачать бланк заявления</a>
             </div>
         </div>
@@ -134,16 +173,16 @@
         </div>
         <div class="page hidden" id="page_4">
             <h2 class="page_title">Курсы</h2>
-            <div class="page_text_block" style="width: 15%; text-align: center;">
+            <div class="page_text_block" id="page_button">
                 <a href="javascript:void(0);" class="download_button" id="lesson_button_1">Общий курс дрессировки</a>
             </div>
-            <div class="page_text_block" style="width: 15%; text-align: center;">
+            <div class="page_text_block" id="page_button">
                 <a href="javascript:void(0);" class="download_button" id="lesson_button_2">Курс "Социализация щенка"</a>
             </div>
-            <div class="page_text_block" style="width: 15%; text-align: center;">
+            <div class="page_text_block" id="page_button">
                 <a href="javascript:void(0);" class="download_button" id="lesson_button_3">ОКП - Общий курс послушания</a>
             </div>
-            <div class="page_text_block" style="width: 15%; text-align: center;">
+            <div class="page_text_block" id="page_button">
                 <a href="javascript:void(0);" class="download_button" id="lesson_button_4">ОКП - Продвинутый Курс Послушания</a>
             </div>
         </div>
@@ -154,31 +193,73 @@
                 <h4 class="page_text_block_content"><img src="/assets/mail.png" alt="" class="text_prefix"> : klsvernyi@mail.ru</h4>
                 <h4 class="page_text_block_content"><img src="/assets/geopin.png" alt="" class="text_prefix"> : г. Нефтекамск, ул. Строителей, д. 89 "А"</h4>
             </div>
+            <h2 class="page_title">Реквизиты :</h2>
+            <div class="page_text_block">
+                <h4 class="page_text_block_content" style="color: rgb(0,255,0);">Получатель :</h4>
+                <h4 class="page_text_block_content">РЕГИОНАЛЬНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ "КЛУБ ЛЮБИТЕЛЕЙ СОБАК "ВЕРНЫЙ" РЕСПУБЛИКИ БАШКОРТОСТАН</h4>
+                <h4 class="page_text_block_content" style="color: rgb(0,255,0);">Банк получателя :</h4>
+                <h4 class="page_text_block_content">Башкирское отделение №8598 ПАО «Сбербанк России» г.Уфа</h4>
+                <h4 class="page_text_block_content" style="color: rgb(0,255,0);">Номер расчетного счета (получателя) :</h4>
+                <h4 class="page_text_block_content">40703810806000001771</h4>
+                <h4 class="page_text_block_content" style="color: rgb(0,255,0);">Корреспондентский счет (Банка получателя) :</h4>
+                <h4 class="page_text_block_content">30101810300000000601</h4>
+                <h4 class="page_text_block_content" style="color: rgb(0,255,0);">БИК Банка получателя :</h4>
+                <h4 class="page_text_block_content">048073601</h4>
+                <h4 class="page_text_block_content" style="color: rgb(0,255,0);">ИНН :</h4>
+                <h4 class="page_text_block_content">7707083893/026402001</h4>
+            </div>
         </div>
         <div class="page hidden" id="page_6">
             <h2 class="page_title">Полезно</h2>
-                <div class="page_text_block" style="width: 15%; text-align: center;">
+                <div class="page_text_block" id="page_button">
                     <a href="javascript:void(0);" class="download_button" id="useful_button_1">Ветеринарные службы города</a>
                 </div>
-                <div class="page_text_block" style="width: 15%; text-align: center;">
+                <div class="page_text_block" id="page_button">
                     <a href="javascript:void(0);" class="download_button" id="useful_button_2">Новости</a>
                 </div>
-                <div class="page_text_block" style="width: 15%; text-align: center;">
+                <div class="page_text_block" id="page_button">
                     <a href="javascript:void(0);" class="download_button" id="useful_button_3">Мероприятия</a>
                 </div>
-                <div class="page_text_block" style="width: 15%; text-align: center;">
+                <div class="page_text_block" id="page_button">
                     <a href="javascript:void(0);" class="download_button" id="useful_button_4">Породы собак</a>
                 </div>
-                <div class="page_text_block" style="width: 15%; text-align: center;">
+                <div class="page_text_block" id="page_button">
                     <a href="javascript:void(0);" class="download_button" id="useful_button_5">Галерея</a>
                 </div>
         </div>
         <div class="page hidden" id="page_7">
             <h2 class="page_title">Хендлинг Зал</h2>
             <div class="page_text_block">
-                <a href="https://lipsum.app/id/1/1024x768" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
-                Image
-              </a>
+                <div class="handling_gallery">
+                    <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+                    <a class="handling_gallery_image_container" href="https://sun9-70.userapi.com/s/v1/ig2/ZjZXnwjtAmlTI7pX6jdVcMy4zz3N7pE1ECI9gpKiO8_FRvgfPuxBpnpZowogiWZCq1dQJ49FhuOAdrZNZr-7Y4T5.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-70.userapi.com/s/v1/ig2/ZjZXnwjtAmlTI7pX6jdVcMy4zz3N7pE1ECI9gpKiO8_FRvgfPuxBpnpZowogiWZCq1dQJ49FhuOAdrZNZr-7Y4T5.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+                    <a class="handling_gallery_image_container"  href="https://sun9-47.userapi.com/s/v1/ig2/mB-6pCL9StJzRUn-Z6T5aBxgIo1LS8AkhyKImJh1JTspdbDqFkcZD_kapaT2a54GRbZ8sHPf6PSjmNpFUeneEInG.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-47.userapi.com/s/v1/ig2/mB-6pCL9StJzRUn-Z6T5aBxgIo1LS8AkhyKImJh1JTspdbDqFkcZD_kapaT2a54GRbZ8sHPf6PSjmNpFUeneEInG.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+                    <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+                    <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+                    <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+                    <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+                    <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+                    <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+
+                </div>
             </div>
             <div class="page_text_block">
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Размер хендлинг зала 100 кв.м.</h4>
@@ -186,29 +267,74 @@
                 <h4 class="page_text_block_content"><img src="/assets/note.png" alt="" class="text_prefix"> Запись на занятия по <img src="/assets/phone.png" alt="" class="text_prefix"> 8-905-002-00-72 (WhatsApp)</h4>
                 <h4 class="page_text_block_content"><img src="/assets/geopin.png" alt="" class="text_prefix"> Адрес : ул. Строителей, д. 89"А",второй этаж</h4>
             </div>
+            <div class="page_text_block">
+                <h2 class="page_title" style="color: rgb(0,255,0);">ПРАВИЛА ПОСЕЩЕНИЯ ХЕНДЛИНГ ЗАЛА:</h2>
+                <h4 class="page_text_block_content">1. К занятиям допускаются собаки любой породы старше 3 месяцев, имеющие ветеринарный паспорт с действующими прививками, сделанными по возрасту. Если Вы сделали собаке прививку, в зал на занятия Вы приходите после 2-х недель карантина.</h4>
+                <h4 class="page_text_block_content">2. Владелец собаки несет полную ответственность за здоровье своей собаки и обязан приводить на занятия только полностью здоровое животное. В случае обнаружения признаков недомогания собаки, тренер или администрация, вправе отказать в проведении занятия.</h4>
+                <h4 class="page_text_block_content">3. Все собаки заходят в здание в полноценных намордниках.</h4>
+                <h4 class="page_text_block_content">4. Собаки, проявляющие агрессию, в перерыве между занятиями должны находиться в наморднике и на поводке рядом с хозяином, либо закрыты в клетку.</h4>
+                <h4 class="page_text_block_content">5. Собака должна находиться под присмотром хозяина, независимо от того, находится ли она в клетке или нет.</h4>
+                <h4 class="page_text_block_content">6. В зал не допускаются течные суки.</h4>
+                <h4 class="page_text_block_content">7. В зал для занятий допускаются люди только в сменной обуви.</h4>
+                <h4 class="page_text_block_content">8. В зал не допускаются лица, находящиеся в нетрезвом и наркотическом состоянии.</h4>
+                <h4 class="page_text_block_content">9. На занятия приводим питомца хорошо выгуленым. В случае "собачьих неожиданностей" в зале – владелец собаки самостоятельно осуществляет уборку за своим питомцем.</h4>
+                <h4 class="page_text_block_content">10. Не используйте крошащиеся виды лакомства, они могут привести к поперхиванию собаки.</h4>
+                <h4 class="page_text_block_content">11. В случае самостоятельных занятий в зале без инструкторского сопровождения хозяин принимает на себя полную ответственность за жизнь и здоровье собаки, а также за возможный ущерб третьим лицам и имуществу третьих лиц и клубу.</h4>
+            </div>
+            <div class="page_text_block">
+                <h2 class="page_title" style="color: rgb(255,0,0);">ЗАПРЕЩЕНО:</h2>
+                <h4 class="page_text_block_content">1. Выгул собак в пределах дворовой территории здания, в котором находится клуб.</h4>
+                <h4 class="page_text_block_content">2. Приходить на занятия с детьми</h4>
+                <h4 class="page_text_block_content">3. Оставлять собаку в зале без присмотра</h4>
+                <h4 class="page_text_block_content">4. Кормление собаки в зале, кроме согласованного с инструктором лакомства, во время пребывания в зале. В случае приема пищи во время занятий или менее, чем за 2 часа до занятий в зале, ответственность за жизнь и здоровье собаки полностью ложится на владельца, в том числе и при занятиях с тренером.</h4>
+                <h4 class="page_text_block_content">5. Использовать в зале тяжелые игрушки, предметы дрессировки которые могут нанести ущерб имуществу клуба. В случае нарушения правил и нанесения порчи, владелец собаки полностью покрывает расходы по ремонту или замене испорченных предметов.</h4>
+            </div>
         </div>
         <div class="page hidden" id="page_8">
-            <h2 class="page_title">8</h2>
+            <h2 class="page_title">🔥Привилегии для членов клуба:</h2>
             <div class="page_text_block">
-                <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Заполнить заявление о вступлении</h4>
-                <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Приложить к заявлению копию родословной или метрики</h4>
-                <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Внести членский вступительный добровольный взнос</h4>
+                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Спец. цены на обмен документов в РКФ</h4>
+                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Оптовые цены на корма, ветеринарные препараты, аммуницию и аксессуары</h4>
+                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Спец. цены на занятия в хендлинг зале</h4>
+                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> БЕСПЛАТНЫЕ консультации</h4>
+                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Коллективная регистрация на выставки</h4>
+                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> БЕСПЛАТНАЯ реклама клубных собак и их пометов</h4>
+                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Участие в клубных закрытых мероприятиях</h4>
+                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Скидка 5% в груминг салоне "Велес"</h4>
+                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Скидка 5% в магазине автоаксессуаров "Автоледи"</h4>
+                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Скидка 20% в суши баре "Филадельфия"</h4>
+                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Автосервис "ИльсурАвто" - диагностика бесплатно, на ремонт 10% скидка</h4>
+                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Оптовые цены на снаряжение "Нон-стоп"</h4>
+                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Оптовые цены на зоотовары " Osso"</h4>
             </div>
         </div>
         <div class="page hidden" id="page_9">
-            <h2 class="page_title">9</h2>
+            <h2 class="page_title">Наши чемпионы</h2>
             <div class="page_text_block">
-                <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Заполнить заявление о вступлении</h4>
-                <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Приложить к заявлению копию родословной или метрики</h4>
-                <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Внести членский вступительный добровольный взнос</h4>
+                <h4 class="page_text_block_content">RAVE REVIEW FORTUNE LOVES ME*ХАННИ</h4>
+                <h4 class="page_text_block_content">Титулы</h4>
+                <h4 class="page_text_block_content">★ Чемпион РКФ*2 ★</h4>
+                <h4 class="page_text_block_content">★ Чемпион ОАНКОО ★</h4>
+                <h4 class="page_text_block_content">★ Чемпион РФЛС ★</h4>
+                <h4 class="page_text_block_content">★ Чемпион России ★</h4>
+                <a class="image_container" href="https://pp.userapi.com/c848528/v848528356/d3e9e/i3eyLoxBY68.jpg" data-fancybox="champion_gallery" data-caption="RAVE REVIEW FORTUNE LOVES ME*ХАННИ">
+                <img src="https://pp.userapi.com/c848528/v848528356/d3e9e/i3eyLoxBY68.jpg" alt="" class="champion_image">
+            </a>
+            </div>
+            <div class="page_text_block">
+                <h4 class="page_text_block_content">Бьюти Биатриче</h4>
+                <h4 class="page_text_block_content">Титулы</h4>
+                <h4 class="page_text_block_content">★ Юный чемпион России ★</h4>
+                <h4 class="page_text_block_content">★ Чемпион России ★</h4>
+                <a class="image_container" href="https://pp.userapi.com/c846124/v846124602/14430e/MMTqSobFI0o.jpg" data-fancybox="champion_gallery" data-caption="Бьюти Биатриче">
+                <img src="https://pp.userapi.com/c846124/v846124602/14430e/MMTqSobFI0o.jpg" alt="" class="champion_image">
+                </a>
             </div>
         </div>
         <div class="page hidden" id="page_10">
-            <h2 class="page_title">10</h2>
+            <h2 class="page_title">Карта</h2>
             <div class="page_text_block">
-                <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Заполнить заявление о вступлении</h4>
-                <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Приложить к заявлению копию родословной или метрики</h4>
-                <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Внести членский вступительный добровольный взнос</h4>
+                <iframe width="100%" height="500px" src="https://yandex.ru/map-widget/v1/?um=constructor%3A47e2a795debacfe0efae2e0c58db5eaf017a8a389b4725f445990d730265c58c&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
             </div>
         </div>
         <div class="page hidden" id="lesson_page_1">
@@ -248,8 +374,8 @@
             <h2 class="page_title">Записаться на курс можно по:</h2>
             <div class="page_text_block">
                 <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> +7-905-002-0072 (WhatsApp)</h4>
-                <h4 class="page_text_block_content">❗Курс рассчитан на 10 занятий.</h4>
-                <h4 class="page_text_block_content">💰Взнос за курс: 3000р.</h4>
+                <h4 class="page_text_block_content"><img src="/assets/exclamation.png" alt="" class="text_prefix"> Курс рассчитан на 10 занятий.</h4>
+                <h4 class="page_text_block_content"><img src="/assets/money.png" alt="" class="text_prefix">Взнос за курс: 3000р.</h4>
             </div>
             <h2 class="page_title">Отзывы к курсу</h2>
             <div class="powr-comments" id="a82bd159_1568908364"></div>
@@ -259,7 +385,7 @@
             <div class="page_text_block">
                 Социализация призвана помочь вашей собаке успешно интегрироваться не только в человеческое общество, но и в общество окружающих ее животных.
             </div>
-            <h2 class="page_title">❗Проблемы несоциализированных щенков:</h2>
+            <h2 class="page_title"><img src="/assets/exclamation.png" alt="" class="text_prefix"> Проблемы несоциализированных щенков:</h2>
             <div class="page_text_block">
                 <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Собаки, которых в молодости должным образом не социализировали, зачастую вырастают в трусливых, не уверенных в себе собак, которые не знают, как себя вести в самых простых ситуациях. В результате, находясь в постоянном стрессе, собака постепенно становится агрессивной, поскольку это естественная защитная реакция животного на непонятные ему события.</h4>
                 <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Другие несоциализированные щенки могут вырасти в гиперактивных, беспокойных собак, которые вследствие своей неуравновешенности будут иметь большие поведенческие проблемы. Такие собаки всегда будут представлять потенциальную опасность не только для других животных, но и для хозяев.</h4>
@@ -271,7 +397,7 @@
             <h2 class="page_title">Записаться на курс можно по:</h2>
             <div class="page_text_block">
                 <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> +7-905-002-0072 (WhatsApp)</h4>
-                <h4 class="page_text_block_content">❗Курс рассчитан на 4 занятия.</h4>
+                <h4 class="page_text_block_content"><img src="/assets/exclamation.png" alt="" class="text_prefix"> Курс рассчитан на 4 занятия.</h4>
             </div>
             <h2 class="page_title">Отзывы к курсу</h2>
             <div class="powr-comments" id="fe9ab47e_1565624666"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
@@ -311,7 +437,7 @@
             <h2 class="page_title">Записаться на курс можно по:</h2>
             <div class="page_text_block">
                 <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> +7-905-002-0072 (WhatsApp)</h4>
-                <h4 class="page_text_block_content">❗Курс рассчитан на 10 занятий.</h4>
+                <h4 class="page_text_block_content"><img src="/assets/exclamation.png" alt="" class="text_prefix"> Курс рассчитан на 10 занятий.</h4>
             </div>
             <h2 class="page_title">Отзывы к курсу</h2>
             <div class="powr-comments" id="8d5a6818_1565622936"></div>
@@ -332,7 +458,7 @@
             <h2 class="page_title">Записаться на курс можно по:</h2>
             <div class="page_text_block">
                 <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> +7-905-002-0072 (WhatsApp)</h4>
-                <h4 class="page_text_block_content">❗Курс рассчитан на 10 занятий.</h4>
+                <h4 class="page_text_block_content"><img src="/assets/exclamation.png" alt="" class="text_prefix"> Курс рассчитан на 10 занятий.</h4>
             </div>
             <h2 class="page_title">Отзывы к курсу</h2>
             <div class="powr-comments" id="6b36ebeb_1565623715"></div>
@@ -347,7 +473,10 @@
                 <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> 8(3473)2-26-61</h4>
                 <h4 class="page_text_block_content">Руководитель: Шафиков Ильяс Асгатович</h4>
                 <h4 class="page_text_block_content">E-mail: neftveterinar@mail.ru</h4>
-                <h4 class="page_text_block_content"><img src="https://pp.userapi.com/c841331/v841331993/6577e/FMltOWyvY1g.jpg" alt="" class="veterinar_image"></h4>
+                <h4 class="page_text_block_content"> 
+                <a class="image_container" href="https://pp.userapi.com/c841331/v841331993/6577e/FMltOWyvY1g.jpg" data-fancybox="veterinar_gallery" data-caption="РБ ГБУ Нефтекамская межрайонная ветеринарная станция">
+                    <img src="https://pp.userapi.com/c841331/v841331993/6577e/FMltOWyvY1g.jpg" alt="" class="veterinar_image">
+                </a></h4>
             </div>
             <div class="page_text_block">
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Ветеринарная клиника "Доктор Айболит"</h4>
@@ -358,7 +487,10 @@
                 <h4 class="page_text_block_content">E-mail: vetdoctor_neft@mail.ru</h4>
                 <h4 class="page_text_block_content">ВКонтакте:&nbsp;<a href="https://vk.com/club19315842" class="text_link" target="_blank"> https://vk.com/club19315842 </a></h4>
                 <h4 class="page_text_block_content">Сайт:&nbsp;<a href="http://aybolit.my1.ru/index/o_nas/0-8" class="text_link" target="_blank"> http://aybolit.my1.ru/index/o_nas/0-8 </a></h4>
-                <h4 class="page_text_block_content"><img src="https://pp.userapi.com/c830109/v830109513/5bfab/FdKWf5W3MhQ.jpg" alt="" class="veterinar_image"></h4>
+                <h4 class="page_text_block_content">  <a class="image_container" href="https://pp.userapi.com/c830109/v830109513/5bfab/FdKWf5W3MhQ.jpg" data-fancybox="veterinar_gallery" data-caption='Ветеринарная клиника "Доктор Айболит"'>
+                    <img src="https://pp.userapi.com/c830109/v830109513/5bfab/FdKWf5W3MhQ.jpg" alt="" class="veterinar_image">
+                </a>
+                </h4>
             </div>
             <div class="page_text_block">
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Ветеринарный лечебно-профилактический центр</h4>
@@ -366,7 +498,11 @@
                 <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> 8(34783) 6-03-33</h4>
                 <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> +7-917-388-58-99 (Только экстренные звонки)</h4>
                 <h4 class="page_text_block_content">Ветеринарный врач: Рыков Эдуард Васильевич</h4>
-                <h4 class="page_text_block_content"><img src="https://pp.userapi.com/c830109/v830109513/5bfb4/zAWegyJ5ws8.jpg" alt="" class="veterinar_image"></h4>
+                <h4 class="page_text_block_content">
+                    <a class="image_container" href="https://pp.userapi.com/c830109/v830109513/5bfb4/zAWegyJ5ws8.jpg" data-fancybox="veterinar_gallery" data-caption='Ветеринарный лечебно-профилактический центр'>
+                        <img src="https://pp.userapi.com/c830109/v830109513/5bfb4/zAWegyJ5ws8.jpg" alt="" class="veterinar_image">
+                    </a>
+                </h4>
             </div>
             <div class="page_text_block">
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Ветеринарный центр "Здоровый питомец"</h4>
@@ -377,15 +513,18 @@
                 <h4 class="page_text_block_content">E-mail: yusupov.mars1974@mail.ru</h4>
                 <h4 class="page_text_block_content">Группа ВКонтакте:&nbsp;<a href="https://vk.com/veterinarniycentr" class="text_link" target="_blank"> https://vk.com/veterinarniycentr </a></h4>
                 <h4 class="page_text_block_content">Страница ВКонтакте:&nbsp;<a href="https://vk.com/id321896051" class="text_link" target="_blank"> https://vk.com/id321896051 </a></h4>
-                <h4 class="page_text_block_content"><img src="https://pp.userapi.com/c830109/v830109513/5bfbd/1CLHATzLEQU.jpg" alt="" class="veterinar_image"></h4>
+                <h4 class="page_text_block_content">
+                    <a class="image_container" href="https://pp.userapi.com/c830109/v830109513/5bfbd/1CLHATzLEQU.jpg" data-fancybox="veterinar_gallery" data-caption='Ветеринарный центр "Здоровый питомец"'>
+                    <img src="https://pp.userapi.com/c830109/v830109513/5bfbd/1CLHATzLEQU.jpg" alt="" class="veterinar_image">
+                    </a>
+                </h4>
             </div>
         </div>
         <div class="page hidden" id="useful_page_2">
             <h2 class="page_title">Новости</h2>
-            <iframe src="https://vk.com/wall-155169164" frameborder="0"></iframe>
         </div>
         <div class="page hidden" id="useful_page_3">
-            <h2 class="page_title">u3</h2>
+            <h2 class="page_title">Мероприятия</h2>
             <div class="page_text_block">
                 <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Заполнить заявление о вступлении</h4>
                 <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Приложить к заявлению копию родословной или метрики</h4>
@@ -397,16 +536,47 @@
             <iframe src="https://lapkins.ru/dog/" width="100%" height="1080"></iframe>
         </div>
         <div class="page hidden" id="useful_page_5">
-            <h2 class="page_title">u5</h2>
+            <h2 class="page_title">Галерея</h2>
             <div class="page_text_block">
-                <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Заполнить заявление о вступлении</h4>
-                <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Приложить к заявлению копию родословной или метрики</h4>
-                <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Внести членский вступительный добровольный взнос</h4>
+                <div class="handling_gallery">
+                    <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+                    <a class="handling_gallery_image_container" href="https://sun9-70.userapi.com/s/v1/ig2/ZjZXnwjtAmlTI7pX6jdVcMy4zz3N7pE1ECI9gpKiO8_FRvgfPuxBpnpZowogiWZCq1dQJ49FhuOAdrZNZr-7Y4T5.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-70.userapi.com/s/v1/ig2/ZjZXnwjtAmlTI7pX6jdVcMy4zz3N7pE1ECI9gpKiO8_FRvgfPuxBpnpZowogiWZCq1dQJ49FhuOAdrZNZr-7Y4T5.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+                    <a class="handling_gallery_image_container"  href="https://sun9-47.userapi.com/s/v1/ig2/mB-6pCL9StJzRUn-Z6T5aBxgIo1LS8AkhyKImJh1JTspdbDqFkcZD_kapaT2a54GRbZ8sHPf6PSjmNpFUeneEInG.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-47.userapi.com/s/v1/ig2/mB-6pCL9StJzRUn-Z6T5aBxgIo1LS8AkhyKImJh1JTspdbDqFkcZD_kapaT2a54GRbZ8sHPf6PSjmNpFUeneEInG.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+                    <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+                    <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+                    <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+                    <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+                    <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+                    <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
+                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                    </a>
+
+                </div>
             </div>
         </div>
+        <h5 class="page_title">By Finest.</h5>
     </body>
-    <script src="/script/script.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="/script/pages.js"></script>
+    <script src="/script/theme.js"></script>
+    <script src="/script/sidebar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://www.powr.io/powr.js?platform=html"></script>
     <script>
