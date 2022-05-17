@@ -11,6 +11,8 @@ var rfss_1 = document.getElementById("RFSS_1")
 var rfss_2 = document.getElementById("RFSS_2")
 var rkf_1 = document.getElementById("RKF_1")
 var rkf_2 = document.getElementById("RKF_2")
+var kls_1 = document.getElementById("KLS_1")
+var kls_2 = document.getElementById("KLS_2")
 checkCookie("theme")
 
 function checkCookie (name) {
@@ -28,6 +30,8 @@ function checkCookie (name) {
         rfss_2.classList.remove("hidden_display")
         rkf_1.classList.add("hidden_display")
         rkf_2.classList.remove("hidden_display")
+        kls_1.classList.add("hidden_display")
+        kls_2.classList.remove("hidden_display")
     } else {
         target.classList.remove("dark")
         button.classList.remove("hidden_display")
@@ -42,6 +46,8 @@ function checkCookie (name) {
         rfss_2.classList.add("hidden_display")
         rkf_1.classList.remove("hidden_display")
         rkf_2.classList.add("hidden_display")
+        kls_1.classList.remove("hidden_display")
+        kls_2.classList.add("hidden_display")
     } 
 }
 
@@ -97,6 +103,8 @@ button.addEventListener("click", function(){
     rfss_2.classList.remove("hidden_display")
     rkf_1.classList.add("hidden_display")
     rkf_2.classList.remove("hidden_display")
+    kls_1.classList.add("hidden_display")
+    kls_2.classList.remove("hidden_display")
     setCookie("theme","dark",{'max-age': 363300})
 })
 
@@ -114,6 +122,8 @@ button2.addEventListener("click", function(){
     rfss_2.classList.add("hidden_display")
     rkf_1.classList.remove("hidden_display")
     rkf_2.classList.add("hidden_display")
+    kls_1.classList.remove("hidden_display")
+    kls_2.classList.add("hidden_display")
     setCookie("theme","light",{'max-age': 363300})
 })
 
@@ -131,6 +141,8 @@ button3.addEventListener("click", function(){
   rfss_2.classList.remove("hidden_display")
   rkf_1.classList.add("hidden_display")
   rkf_2.classList.remove("hidden_display")
+  kls_1.classList.add("hidden_display")
+  kls_2.classList.remove("hidden_display")
   setCookie("theme","dark",{'max-age': 363300})
 })
 
@@ -148,5 +160,7 @@ button4.addEventListener("click", function(){
   rfss_2.classList.add("hidden_display")
   rkf_1.classList.remove("hidden_display")
   rkf_2.classList.add("hidden_display")
+  kls_1.classList.remove("hidden_display")
+  kls_2.classList.add("hidden_display")
   setCookie("theme","light",{'max-age': 363300})
 })

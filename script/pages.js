@@ -40,6 +40,10 @@ var lesson_page_1 = document.getElementById("lesson_page_1")
 var lesson_page_2 = document.getElementById("lesson_page_2")
 var lesson_page_3 = document.getElementById("lesson_page_3")
 var lesson_page_4 = document.getElementById("lesson_page_4")
+var mobile_lesson_page_1 = document.getElementById("lesson_page_1")
+var mobile_lesson_page_2 = document.getElementById("lesson_page_2")
+var mobile_lesson_page_3 = document.getElementById("lesson_page_3")
+var mobile_lesson_page_4 = document.getElementById("lesson_page_4")
 
 var useful_button_1 = document.getElementById("useful_button_1")
 var useful_button_2 = document.getElementById("useful_button_2")
@@ -1298,6 +1302,210 @@ lesson_button_4.addEventListener("click", function(){
     lesson_page_4.classList.add("active_display")}, 1000);
 })
 
+mobile_lesson_button_1.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {lesson_page_1.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    lesson_page_1.classList.remove("hidden")
+    lesson_page_1.classList.add("active")
+    lesson_page_1.classList.remove("hidden_display")
+    lesson_page_1.classList.add("active_display")}, 1000);
+})
+
+mobile_lesson_button_2.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {lesson_page_2.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    lesson_page_2.classList.remove("hidden")
+    lesson_page_2.classList.add("active")
+    lesson_page_2.classList.remove("hidden_display")
+    lesson_page_2.classList.add("active_display")}, 1000);
+})
+
+mobile_lesson_button_3.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {lesson_page_3.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    lesson_page_3.classList.remove("hidden")
+    lesson_page_3.classList.add("active")
+    lesson_page_3.classList.remove("hidden_display")
+    lesson_page_3.classList.add("active_display")}, 1000);
+})
+
+mobile_lesson_button_4.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {lesson_page_4.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    lesson_page_4.classList.remove("hidden")
+    lesson_page_4.classList.add("active")
+    lesson_page_4.classList.remove("hidden_display")
+    lesson_page_4.classList.add("active_display")}, 1000);
+})
+
 useful_button_1.addEventListener("click", function(){
     /* Hide other pages (opacity) */
     page_1.classList.add("hidden")
@@ -1503,6 +1711,261 @@ useful_button_4.addEventListener("click", function(){
 })
 
 useful_button_5.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+
+    setTimeout(() => {useful_page_5.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    useful_page_5.classList.remove("hidden")
+    useful_page_5.classList.add("active")
+    useful_page_5.classList.remove("hidden_display")
+    useful_page_5.classList.add("active_display")}, 1000);
+})
+
+mobile_useful_button_1.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {useful_page_1.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    useful_page_1.classList.remove("hidden")
+    useful_page_1.classList.add("active")
+    useful_page_1.classList.remove("hidden_display")
+    useful_page_1.classList.add("active_display")}, 1000);
+})
+
+mobile_useful_button_2.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {useful_page_2.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    useful_page_2.classList.remove("hidden")
+    useful_page_2.classList.add("active")
+    useful_page_2.classList.remove("hidden_display")
+    useful_page_2.classList.add("active_display")}, 1000);
+})
+
+mobile_useful_button_3.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {useful_page_3.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    useful_page_3.classList.remove("hidden")
+    useful_page_3.classList.add("active")
+    useful_page_3.classList.remove("hidden_display")
+    useful_page_3.classList.add("active_display")}, 1000);
+})
+
+mobile_useful_button_4.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {useful_page_4.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    useful_page_4.classList.remove("hidden")
+    useful_page_4.classList.add("active")
+    useful_page_4.classList.remove("hidden_display")
+    useful_page_4.classList.add("active_display")}, 1000);
+})
+
+mobile_useful_button_5.addEventListener("click", function(){
     /* Hide other pages (opacity) */
     page_1.classList.add("hidden")
     page_2.classList.add("hidden")
