@@ -2,12 +2,12 @@
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "0";
-  document.getElementById("hamburger_opener").style.display = "none"
+  document.getElementById("hamburger_opener").classList.add("hidden_display")
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
-  document.getElementById("hamburger_opener").style.display = "flex"
+  document.getElementById("hamburger_opener").classList.remove("hidden_display")
 }

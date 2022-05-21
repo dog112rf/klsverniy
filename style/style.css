@@ -112,6 +112,7 @@ p {
     justify-content: center;
     align-items: center;
     transition: .5s;
+    color: #00ff00;
 }
 
 .page_content {
@@ -152,7 +153,7 @@ p {
 
 .download_button {
     background: rgb(26, 0, 73);
-    color: white;
+    color: #00ff00;
     text-decoration: none;
     text-align: center;
     margin-left: auto;
@@ -826,11 +827,11 @@ display: flex;
 
 .page_text_block div iframe {
 width: 100%;
-height: 650px!important
+height: 750px!important
 }
 
 #news_block {
-height: 650px!important
+height: 750px!important
 }
 
 .phone_header_menu {
@@ -860,7 +861,7 @@ height: 650px!important
   }
 
   .site_adress {
-    font-size: 10px;
+    font-size: 8px;
   }
 
   header {
