@@ -103,6 +103,7 @@ p {
 .page {
     margin: 5px;
     transition: .5s;
+    margin-top: 4%;
 }
 
 .page_title {
@@ -415,24 +416,37 @@ display: flex;
   }
   
   .hamburger {
-      background: rgba(255, 255, 255, 0);
-      position: relative;
-display: none;
+    background: rgb(26, 0, 73);
+      position: fixed;
+      display: none;
       text-align: center;
-      padding: 13px 0;
-      width: 50px;
-    height: 73px;
-      left: 0;
-    top: 0;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      left: 2%;
+      top: 1%;
+      padding: 1px;
       z-index: 1000;
     cursor: pointer;
     transition: .5s;
+    border-radius: 5px;
+    
+  }
+
+  .menu_opener {
+    width: 50px;
+    height: 50px;
+    content:"\2630";
+    display: block;
+    position: fixed;
+    color: rgb(0, 0, 0);
   }
   
   .hamburger:before {
       content:"\2630"; /* hamburger icon */
       display: block;
-    color: rgb(0, 0, 0);
+      color: rgb(183, 144, 255);
     line-height: 32px;
     font-size: 16px;
   }
@@ -735,7 +749,63 @@ display: none;
     z-index: 100000;
     /* Above WP toolbar. */
   }
-  
+
+
+    
+  .sidenav {
+    display: none;
+  }
+  /* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background: rgb(26, 0, 73);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  margin: 0;
+  padding: 0;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
   
 #secondary_image {
   width: 70%;
@@ -772,8 +842,16 @@ height: 650px!important
     display: none;
   }
 
+  .page {
+    margin-top: 15%;
+  }
   
-.phone_header_menu {
+  .phone_header_menu {
+    display: block;
+  }
+
+    
+.sidenav {
   display: block;
 }
 
@@ -817,7 +895,7 @@ height: 650px!important
   }
 
   .social_container {
-    width: 25%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -842,7 +920,8 @@ height: 650px!important
   }
 
   .hamburger {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 
   .low_vision .social_container {
@@ -855,4 +934,5 @@ height: 650px!important
     flex-direction: column;
     align-items: flex-start;
   }
+
 }

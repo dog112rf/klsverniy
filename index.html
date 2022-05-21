@@ -12,57 +12,46 @@
   />
 </head>
 <body id="body">
-    <!-- <noscript><meta http-equiv="refresh" content="0; https://finestwebdesign.github.io/noscript/index.html"></noscript> -->
-    <div class="phone_header_menu">
-        <div class="primary-nav">
-            <button href="#" class="hamburger open-panel nav-toggle">
-        <span class="screen-reader-text">Menu</span>
-        </button>
-            <nav role="navigation" class="phone_menu hidden">
-                <div class="overflow-container">
-                    <ul class="menu-dropdown">
-                        <li><a href="javascript:void(0);" class="menu_button" id="phone_menu_button_1">Главная</a></li>
-                        <li><a href="javascript:void(0);" class="menu_button" id="phone_menu_button_2">Вступить в клуб</a></li>
-                        <li><a href="javascript:void(0);" class="menu_button" id="phone_menu_button_3">Услуги</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <a href="javascript:void(0);" class="dropbtn">Курсы</a>
-                                <div class="dropdown-content">
-                                    <a href="javascript:void(0);" id="mobile_lesson_button_1">ОКД - Общий Курс Дрессировки</a>
-                                    <a href="javascript:void(0);" id="mobile_lesson_button_2">Курс "СОЦИАЛИЗАЦИЯ ЩЕНКА"</a>
-                                    <a href="javascript:void(0);" id="mobile_lesson_button_3">ОКП - Общий Курс Послушания</a>
-                                    <a href="javascript:void(0);" id="mobile_lesson_button_4">ОКП - Продвинутый Курс Послушания</a>
-                                </div>
-                              </div></li>
-                        <li><a href="javascript:void(0);" class="menu_button" id="phone_menu_button_5">Контакты</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <a href="javascript:void(0);" class="dropbtn">Полезно</a>
-                                <div class="dropdown-content">
-                                  <a href="javascript:void(0);" id="mobile_useful_button_1">Ветеринарные службы города</a>
-                                  <a href="javascript:void(0);" id="mobile_useful_button_2">Новости</a>
-                                  <a href="javascript:void(0);" id="mobile_useful_button_3">Мероприятия</a>
-                                  <a href="javascript:void(0);" id="mobile_useful_button_4">Породы собак</a>
-                                  <a href="javascript:void(0);" id="mobile_useful_button_5">Галерея</a>
-                                </div>
-                              </div>
-                        </li>
-                        <li><a href="javascript:void(0);" class="menu_button" id="phone_menu_button_7">Хендлинг зал</a></li>
-                        <li><a href="javascript:void(0);" class="menu_button" id="phone_menu_button_8">Привелегии клуба</a></li>
-                        <li><a href="javascript:void(0);" class="menu_button" id="phone_menu_button_9">Наши чемпионы</a></li>   
-                        <li><div class="social_container">
-                            <a href="javascript:void(0);" class="vision_changer_button" id="mobile_vision_changer"><img src="/assets/moon.png" id="vision_changer_image" alt="" class="social_icon"></a>
-                            <a href="javascript:void(0);" class="theme_changer_button" id="mobile_theme_changer"><img src="/assets/moon.png" id="theme_changer_image" alt="" class="social_icon"></a>
-                            <a href="javascript:void(0);" class="theme_changer_button" id="mobile_theme_changer_2"><img src="/assets/moon.png" id="theme_changer_image_2" alt="" class="social_icon"></a>
-                            <a href="vk.com" class="social_button"><img src="/assets/vk.png" alt="" class="social_icon"></a>
-                            <a href="javascript:void(0);" class="social_button"><img src="/assets/instagram.png" alt="" class="social_icon"></a>
-                            <a href="javascript:void(0);" class="social_button"><img src="/assets/facebook.png" alt="" class="social_icon"></a>
-                        </div></li>
-                    </ul>
-                </div>
-            </nav>      
+    <span onclick="openNav()" id="hamburger_opener" class="hamburger"></span>
+    <div id="mySidenav" class="sidenav" >
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0);" class="menu_button" onclick="closeNav()" id="phone_menu_button_1">Главная</a>
+        <a href="javascript:void(0);" class="menu_button" onclick="closeNav()" id="phone_menu_button_2">Вступить в клуб</a>
+        <a href="javascript:void(0);" class="menu_button" onclick="closeNav()" id="phone_menu_button_3">Услуги</a>
+        <div class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Курсы</a>
+            <div class="dropdown-content">
+                <a href="javascript:void(0);" onclick="closeNav()" id="mobile_lesson_button_1">ОКД - Общий Курс Дрессировки</a>
+                <a href="javascript:void(0);" onclick="closeNav()" id="mobile_lesson_button_2">Курс "СОЦИАЛИЗАЦИЯ ЩЕНКА"</a>
+                <a href="javascript:void(0);" onclick="closeNav()" id="mobile_lesson_button_3">ОКП - Общий Курс Послушания</a>
+                <a href="javascript:void(0);" onclick="closeNav()" id="mobile_lesson_button_4">ОКП - Продвинутый Курс Послушания</a>
+            </div>
         </div>
-    </div>
+        <a href="javascript:void(0);" class="menu_button" onclick="closeNav()" id="phone_menu_button_5">Контакты</a>
+        <div class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Полезно</a>
+                <div class="dropdown-content">
+                  <a href="javascript:void(0);" onclick="closeNav()" id="mobile_useful_button_1">Ветеринарные службы города</a>
+                  <a href="javascript:void(0);" onclick="closeNav()" id="mobile_useful_button_2">Новости</a>
+                  <a href="javascript:void(0);" onclick="closeNav()" id="mobile_useful_button_3">Мероприятия</a>
+                  <a href="javascript:void(0);" onclick="closeNav()" id="mobile_useful_button_4">Породы собак</a>
+                  <a href="javascript:void(0);" onclick="closeNav()" id="mobile_useful_button_5">Галерея</a>
+                </div>
+        </div>
+    <a href="javascript:void(0);" class="menu_button" onclick="closeNav()" id="phone_menu_button_7">Хендлинг зал</a>
+    <a href="javascript:void(0);" class="menu_button" onclick="closeNav()" id="phone_menu_button_8">Привелегии клуба</a>
+    <a href="javascript:void(0);" class="menu_button" onclick="closeNav()" id="phone_menu_button_9">Наши чемпионы</a>
+    <div class="social_container">
+            <a href="javascript:void(0);" class="vision_changer_button" id="mobile_vision_changer"><img src="/assets/moon.png" id="vision_changer_image" alt="" class="social_icon"></a>
+            <a href="javascript:void(0);" class="theme_changer_button" id="mobile_theme_changer"><img src="/assets/moon.png" id="theme_changer_image" alt="" class="social_icon"></a>
+            <a href="javascript:void(0);" class="theme_changer_button" id="mobile_theme_changer_2"><img src="/assets/moon.png" id="theme_changer_image_2" alt="" class="social_icon"></a>
+            <a href="vk.com" class="social_button"><img src="/assets/vk.png" alt="" class="social_icon"></a>
+            <a href="javascript:void(0);" class="social_button"><img src="/assets/instagram.png" alt="" class="social_icon"></a>
+            <a href="javascript:void(0);" class="social_button"><img src="/assets/facebook.png" alt="" class="social_icon"></a>
+        </div>
+      </div>
+    <div id="main" onclick="closeNav()">
+    <!-- <noscript><meta http-equiv="refresh" content="0; https://finestwebdesign.github.io/noscript/index.html"></noscript> -->
     <header>
         <div class="header_image_container">
             <img src="/assets/KLS.png" alt="" id="KLS_1">
@@ -142,10 +131,11 @@
                 </a>
             </div>
           </div>
-        <div class="page" id="page_1">
-            <h2 class="page_title">Добро пожаловать на страничку клуба!</h2>
+        <div class="page"id="page_1">
             <div class="page_content">
-                <div class="page_text_block"><p>РОО КЛС "ВЕРНЫЙ" РБ является некоммерческой региональной общественной организацией.</p> 
+                <div class="page_text_block">
+                    <h2 class="page_title">Добро пожаловать на страничку клуба!</h2>
+                    <p>РОО КЛС "ВЕРНЫЙ" РБ является некоммерческой региональной общественной организацией.</p> 
                     <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Оснащение клуба:</h4>
                     <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Офис</h4>
                     <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Хендлинг зал со снарядами и тренажерами (100 кв.м.)</h4>
@@ -177,8 +167,8 @@
             </div>
         </div>
         <div class="page hidden" id="page_2">
-            <h2 class="page_title">Для вступления в клуб необходимо:</h2>
             <div class="page_text_block">
+                <h2 class="page_title">Для вступления в клуб необходимо:</h2>
                 <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Заполнить заявление о вступлении</h4>
                 <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Приложить к заявлению копию родословной или метрики</h4>
                 <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Внести членский вступительный добровольный взнос</h4>
@@ -192,8 +182,8 @@
             </div>
         </div>
         <div class="page hidden" id="page_3">
-            <h2 class="page_title">Услуги клуба:</h2>
             <div class="page_text_block">
+                <h2 class="page_title">Услуги клуба:</h2>
                 <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Оформление документов в РКФ</h4>
                 <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Хендлинг &nbsp;<p>(выставочная подготовка)</p> – в группе и индивидуально</h4>
                 <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Выставка собак</h4>
@@ -218,18 +208,18 @@
             <a href="javascript:void(0);" class="menu_button" id="menu_button_10">Карта</a>
         </div>
         <div class="page hidden" id="page_5">
-            <h2 class="page_title">Контакты :</h2>
             <div class="page_text_block">
+                <h2 class="page_title">Контакты :</h2>
                 <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> : +7 (905) 002-00-72</h4>
                 <h4 class="page_text_block_content"><img src="/assets/mail.png" alt="" class="text_prefix"> : klsvernyi@mail.ru</h4>
                 <h4 class="page_text_block_content"><img src="/assets/geopin.png" alt="" class="text_prefix"> : г. Нефтекамск, ул. Строителей, д. 89 "А"</h4>
             </div>
-            <h2 class="page_title">Карта</h2>
             <div class="page_text_block">
+                <h2 class="page_title">Карта</h2>
                 <iframe width="100%" height="500px" src="https://yandex.ru/map-widget/v1/?um=constructor%3A47e2a795debacfe0efae2e0c58db5eaf017a8a389b4725f445990d730265c58c&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
             </div>
-            <h2 class="page_title">Реквизиты :</h2>
             <div class="page_text_block">
+                <h2 class="page_title">Реквизиты :</h2>
                 <h4 class="page_text_block_content" style="color: rgb(0,255,0);">Получатель :</h4>
                 <h4 class="page_text_block_content">РЕГИОНАЛЬНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ "КЛУБ ЛЮБИТЕЛЕЙ СОБАК "ВЕРНЫЙ" РЕСПУБЛИКИ БАШКОРТОСТАН</h4>
                 <h4 class="page_text_block_content" style="color: rgb(0,255,0);">Банк получателя :</h4>
@@ -264,8 +254,8 @@
                 <a href="javascript:void(0);" class="menu_button" id="phone_menu_button_6">Полезно</a>
         </div>
         <div class="page hidden" id="page_7">
-            <h2 class="page_title">Хендлинг Зал</h2>
             <div class="page_text_block">
+                <h2 class="page_title">Хендлинг Зал</h2>
                 <div class="handling_gallery">
                     <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
                         <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
@@ -328,8 +318,8 @@
             </div>
         </div>
         <div class="page hidden" id="page_8">
-            <h2 class="page_title"><img src="/assets/fire.png" alt="" class="text_prefix">Привилегии для членов клуба:</h2>
             <div class="page_text_block">
+                <h2 class="page_title"><img src="/assets/fire.png" alt="" class="text_prefix">Привилегии для членов клуба:</h2>
                 <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Спец. цены на обмен документов в РКФ</h4>
                 <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Оптовые цены на корма, ветеринарные препараты, аммуницию и аксессуары</h4>
                 <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Спец. цены на занятия в хендлинг зале</h4>
@@ -346,8 +336,8 @@
             </div>
         </div>
         <div class="page hidden" id="page_9">
-            <h2 class="page_title">Наши чемпионы</h2>
             <div class="page_text_block">
+                <h2 class="page_title">Наши чемпионы</h2>
                 <h4 class="page_text_block_content">RAVE REVIEW FORTUNE LOVES ME*ХАННИ</h4>
                 <h4 class="page_text_block_content">Титулы</h4>
                 <h4 class="page_text_block_content">★ Чемпион РКФ*2 ★</h4>
@@ -375,8 +365,8 @@
             </div>
         </div>
         <div class="page hidden" id="lesson_page_1">
-            <h2 class="page_title">ОКД - Общий Курс Дрессировки</h2>
             <div class="page_text_block">
+                <h2 class="page_title">ОКД - Общий Курс Дрессировки</h2>
                 <p>
                     Общий курс дрессировки (ОКД) - Российский национальный норматив дрессировки собак. 
                     В процессе ОКД y собаки вырабатываются навыки, дисциплинирующие животное, позволяющие управлять ee поведением,
@@ -386,8 +376,8 @@
                      точности выполнения собакой каждого навыка.    
                     </p>
             </div>
-            <h2 class="page_title"><img src="/assets/dog.png" alt="" class="text_prefix">На курсе отрабатываются навыки:</h2>
             <div class="page_text_block">
+                <h2 class="page_title"><img src="/assets/dog.png" alt="" class="text_prefix">На курсе отрабатываются навыки:</h2>
                 <h4 class="page_text_block_content">- Приучения собаки к шлейке, ошейнику, поводку и наморднику.</h4>
                 <h4 class="page_text_block_content">- Команда «Гуляй»</h4>
                 <h4 class="page_text_block_content">- Движение собаки рядом с хозяином команда «Рядом»</h4>
@@ -402,16 +392,16 @@
                 <h4 class="page_text_block_content">- Обучение не брать корм у незнакомых людей или лежащий на земле</h4>
                 <h4 class="page_text_block_content">- Обучение не реагировать на резкие звуки &nbsp;<p>(выстрел)</p> и посторонние раздражители — чужие люди и собаки</h4>
             </div>
-            <h2 class="page_title"><img src="/assets/pin.png" alt="" class="text_prefix">Что необходимо для занятий по послушанию &nbsp;<p>(амуниция)</p>?</h2>
             <div class="page_text_block">
+                <h2 class="page_title"><img src="/assets/pin.png" alt="" class="text_prefix">Что необходимо для занятий по послушанию &nbsp;<p>(амуниция)</p>?</h2>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Мягкий, удобный ошейник, подходящий вашей собаке по размеру;</h4>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> 1.5-2 м поводок с шириной стропы около 2 см. &nbsp;<p>(Рулетки, металлические, тонкие шнуровые поводки для занятий не подходят)</p>;</h4>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Лакомство. Не повседневный корм, а что-то вкусное и любимое вашей собакой. Идеально подойдут слегка приваренные сердечки, желудочки, лёгкое и т. п., нарезанное на небольшие кусочки. Размер их должен быть таков, чтобы собака не тратила время на их жевание, но и не теряла мотивации из-за слишком незначительного размера.</h4>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Сумочка для лакомства &nbsp;<p>(желательна, но не обязательна — позволяет освободить руки от пакета, а карманы — от непривычных запахов и пятен)</p>;</h4>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Коврик для отработки навыка «Место»;</h4>
             </div>
-            <h2 class="page_title">Записаться на курс можно по:</h2>
             <div class="page_text_block">
+                <h2 class="page_title">Записаться на курс можно по:</h2>
                 <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> +7-905-002-0072 &nbsp;<p>(WhatsApp)</p></h4>
                 <h4 class="page_text_block_content"><img src="/assets/exclamation.png" alt="" class="text_prefix"> Курс рассчитан на 10 занятий.</h4>
                 <h4 class="page_text_block_content"><img src="/assets/money.png" alt="" class="text_prefix">Взнос за курс: 3000р.</h4>
@@ -420,21 +410,21 @@
             <div class="powr-comments" id="a82bd159_1568908364"></div>
         </div>
         <div class="page hidden" id="lesson_page_2">
-            <h2 class="page_title">Курс "СОЦИАЛИЗАЦИЯ ЩЕНКА"</h2>
             <div class="page_text_block">
+            <h2 class="page_title">Курс "СОЦИАЛИЗАЦИЯ ЩЕНКА"</h2>
             <p>Социализация призвана помочь вашей собаке успешно интегрироваться не только в человеческое общество, но и в общество окружающих ее животных.</p>
             </div>
-            <h2 class="page_title"><img src="/assets/exclamation.png" alt="" class="text_prefix"> Проблемы несоциализированных щенков:</h2>
             <div class="page_text_block">
+                <h2 class="page_title"><img src="/assets/exclamation.png" alt="" class="text_prefix"> Проблемы несоциализированных щенков:</h2>
                 <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Собаки, которых в молодости должным образом не социализировали, зачастую вырастают в трусливых, не уверенных в себе собак, которые не знают, как себя вести в самых простых ситуациях. В результате, находясь в постоянном стрессе, собака постепенно становится агрессивной, поскольку это естественная защитная реакция животного на непонятные ему события.</h4>
                 <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Другие несоциализированные щенки могут вырасти в гиперактивных, беспокойных собак, которые вследствие своей неуравновешенности будут иметь большие поведенческие проблемы. Такие собаки всегда будут представлять потенциальную опасность не только для других животных, но и для хозяев.</h4>
             </div>
-            <h2 class="page_title">Для чего нужна социализация щенка?</h2>
             <div class="page_text_block">
+                <h2 class="page_title">Для чего нужна социализация щенка?</h2>
                 В ходе социализации молодая собака постепенно приобретает житейский опыт, учится отличать опасное от безопасного и контролировать свое поведение. Таким образом, уже взрослая собака будет спокойно, без тревоги, воспринимать новые явления и ситуации. Тщательно продуманная социализация вашего щенка, поможет ему вырасти в послушную, спокойную и уверенную в себе собаку.
             </div>
-            <h2 class="page_title">Записаться на курс можно по:</h2>
             <div class="page_text_block">
+                <h2 class="page_title">Записаться на курс можно по:</h2>
                 <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> +7-905-002-0072 &nbsp;<p>(WhatsApp)</p></h4>
                 <h4 class="page_text_block_content"><img src="/assets/exclamation.png" alt="" class="text_prefix"> Курс рассчитан на 4 занятия.</h4>
             </div>
@@ -442,12 +432,12 @@
             <div class="powr-comments" id="fe9ab47e_1565624666"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
         </div>
         <div class="page hidden" id="lesson_page_3">
-            <h2 class="page_title">ОКП - Общий Курс Послушания</h2>
             <div class="page_text_block">
+                <h2 class="page_title">ОКП - Общий Курс Послушания</h2>
                 <p>Курс послушания необходим хозяевам тех питомцев, которые хотят иметь хороший контакт со своей собакой, уметь управлять ею и получать удовольствие от совместных прогулок.</p>
             </div>
-            <h2 class="page_title"><img src="/assets/note.png" alt="" class="text_prefix"> В курс общего послушания входят такие первоначальные навыки, как:</h2>
             <div class="page_text_block">
+                <h2 class="page_title"><img src="/assets/note.png" alt="" class="text_prefix"> В курс общего послушания входят такие первоначальные навыки, как:</h2>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Контакт с хозяином</h4>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Показ прикуса</h4>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Адекватное отношение к наморднику.</h4>
@@ -464,8 +454,8 @@
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Хождение "рядом"</h4>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Посыл собаки на место-команда "место"</h4>
             </div>
-            <h2 class="page_title"><img src="/assets/pin.png" alt="" class="text_prefix"> Что необходимо для занятий по послушанию &nbsp;<p>(амуниция)</p>?</h2>
             <div class="page_text_block">
+                <h2 class="page_title"><img src="/assets/pin.png" alt="" class="text_prefix"> Что необходимо для занятий по послушанию &nbsp;<p>(амуниция)</p>?</h2>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Мягкий, удобный ошейник, подходящий вашей собаке по размеру;</h4>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> 1.5-2 м поводок с шириной стропы около 2 см. &nbsp;<p>(Рулетки, металлические, тонкие шнуровые поводки для занятий не подходят)</p>;</h4>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Намордник для отработки навыка;</h4>
@@ -473,8 +463,8 @@
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Сумочка для лакомства &nbsp;<p>(желательна, но не обязательна — позволяет освободить руки от пакета, а карманы — от непривычных запахов и пятен)</p>;</h4>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Коврик для отработки навыка «Место»;</h4>
             </div>
-            <h2 class="page_title">Записаться на курс можно по:</h2>
             <div class="page_text_block">
+                <h2 class="page_title">Записаться на курс можно по:</h2>
                 <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> +7-905-002-0072 &nbsp;<p>(WhatsApp)</p></h4>
                 <h4 class="page_text_block_content"><img src="/assets/exclamation.png" alt="" class="text_prefix"> Курс рассчитан на 10 занятий.</h4>
             </div>
@@ -482,20 +472,20 @@
             <div class="powr-comments" id="8d5a6818_1565622936"></div>
         </div>
         <div class="page hidden" id="lesson_page_4">
-            <h2 class="page_title">ОКП - Продвинутый Курс Послушания</h2>
             <div class="page_text_block">
+                <h2 class="page_title">ОКП - Продвинутый Курс Послушания</h2>
                <p>Продвинутый курс послушания - это следующая ступень образования собак в нашем кинологическом клубе. Здесь начинается четкая работа по отработке навыков. В процессе этого курса идет уже не изучение, а доработка, отшлифовка тех команд, которые собака уже знает. Работа на расстояние, выдержка, работа без поводка.</p> 
             </div>
-            <h2 class="page_title"><img src="/assets/pin.png" alt="" class="text_prefix"> Что необходимо для занятий по послушанию &nbsp;<p>(амуниция)</p>?</h2>
             <div class="page_text_block">
+                <h2 class="page_title"><img src="/assets/pin.png" alt="" class="text_prefix"> Что необходимо для занятий по послушанию &nbsp;<p>(амуниция)</p>?</h2>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Мягкий, удобный ошейник, подходящий вашей собаке по размеру;</h4>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix">  3 м поводок с шириной стропы около 2 см. &nbsp;<p>(Рулетки, металлические, тонкие шнуровые поводки для занятий не подходят)</p> ;</h4>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Лакомство. Не повседневный корм, а что-то вкусное и любимое вашей собакой. Идеально подойдут слегка приваренные сердечки, желудочки, лёгкое и т. п., нарезанное на небольшие кусочки. Размер их должен быть таков, чтобы собака не тратила время на их жевание, но и не теряла мотивации из-за слишком незначительного размера.</h4>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Сумочка для лакомства &nbsp;<p>(желательна, но не обязательна — позволяет освободить руки от пакета, а карманы — от непривычных запахов и пятен)</p>;</h4>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Коврик для отработки навыка «Место»;</h4>
             </div>
-            <h2 class="page_title">Записаться на курс можно по:</h2>
             <div class="page_text_block">
+                <h2 class="page_title">Записаться на курс можно по:</h2>
                 <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> +7-905-002-0072 &nbsp;<p>(WhatsApp)</p></h4>
                 <h4 class="page_text_block_content"><img src="/assets/exclamation.png" alt="" class="text_prefix"> Курс рассчитан на 10 занятий.</h4>
             </div>
@@ -503,8 +493,8 @@
             <div class="powr-comments" id="6b36ebeb_1565623715"></div>
         </div>
         <div class="page hidden" id="useful_page_1">
-            <h2 class="page_title">Ветеринарные службы города</h2>
             <div class="page_text_block">
+                <h2 class="page_title">Ветеринарные службы города</h2>
                 <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> РБ ГБУ Нефтекамская межрайонная ветеринарная станция</h4>
                 <h4 class="page_text_block_content"><img src="/assets/note.png" alt="" class="text_prefix"> 452683, Республика Башкортостан, г. Нефтекамск, ул. Магистральная, д. 7</h4>
                 <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> 8(3473)2-15-73</h4>
@@ -560,8 +550,8 @@
             </div>
         </div>
         <div class="page hidden" id="useful_page_2">
-            <h2 class="page_title">Новости</h2>
             <div class="page_text_block" id="news_block">
+                <h2 class="page_title">Новости</h2>
                 <div id="vk_post_-155169164_2187"></div>
                 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
                 <script type="text/javascript">
@@ -572,15 +562,8 @@
             </div>
         </div>
         <div class="page hidden" id="useful_page_3">
-            <h2 class="page_title">Мероприятия</h2>
             <div class="page_text_block" id="news_block">
-                <div id="vk_post_-155169164_2187"></div>
-                <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
-                <script type="text/javascript">
-                  (function() {
-                    VK.Widgets.Post("vk_post_-155169164_2187", -155169164, 2187, 'Yd2i-rqlHqby64QLcEdM9m3efcWx');
-                  }());
-                </script>
+                <h2 class="page_title">Мероприятия</h2>
             </div>
         </div>
         <div class="page hidden" id="useful_page_4">
@@ -588,8 +571,8 @@
             <iframe src="https://lapkins.ru/dog/" width="100%" height="1080"></iframe>
         </div>
         <div class="page hidden" id="useful_page_5">
-            <h2 class="page_title">Галерея</h2>
             <div class="page_text_block">
+                <h2 class="page_title">Галерея</h2>
                 <div class="handling_gallery">
                     <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
                         <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
@@ -623,6 +606,7 @@
             </div>
         </div>
         <h5 class="page_title">By Finest.</h5>
+    </div>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
