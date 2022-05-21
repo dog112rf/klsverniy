@@ -160,6 +160,9 @@ p {
     margin-right: auto;
 }
 
+:focus
+{outline: 0; outline-offset: 0;}
+
 .text_prefix {
     width: 2%;
     margin: 5px;
