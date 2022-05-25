@@ -135,6 +135,8 @@ p {
     display: flex;
     justify-content: left;
     align-items: center;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
 }
 
 .active {
@@ -170,6 +172,15 @@ p {
 
 .veterinar_image {
     width: 100%;
+}
+
+.page_text_block_content a {
+  color: rgb(183, 144, 255);;
+  transition: .5s;
+}
+
+.page_text_block_content a:hover {
+  color: rgb(240, 240, 240);
 }
 
 .text_link {
