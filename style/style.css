@@ -66,18 +66,12 @@ p {
     margin: 0.5%;
     font-size: 25px;
     width: 100%;
-    font-family: 'BeneficeAP';
-    src: url('/assets/BeneficeAP.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
     transition: .5s;
 }
 
 .site_adress {
     margin: 0.5%;
     font-size: 15px;
-    font-family: 'BeneficeAP';
-    src: url('/assets/BeneficeAP.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
     transition: .5s;
@@ -200,8 +194,7 @@ p {
 }
 
 .handling_gallery_image {
-    width: 30%;
-    height: 200px;
+    width: 100%;
     object-fit: cover;
 }
 

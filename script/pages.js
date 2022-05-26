@@ -126,6 +126,8 @@ menu_button_1.addEventListener("click", function(){
     page_1.classList.add("active")
     page_1.classList.remove("hidden_display")
     page_1.classList.add("active_display")}, 1000);
+
+    document.title = 'Клуб Любителей Собак "Верный"';
 })
 
 menu_button_2.addEventListener("click", function(){
@@ -177,6 +179,7 @@ menu_button_2.addEventListener("click", function(){
     page_2.classList.add("active")
     page_2.classList.remove("hidden_display")
     page_2.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Вступить в клуб'
 })
 
 menu_button_3.addEventListener("click", function(){
@@ -228,6 +231,7 @@ menu_button_3.addEventListener("click", function(){
     page_3.classList.add("active")
     page_3.classList.remove("hidden_display")
     page_3.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Услуги'
 })
 
 menu_button_4.addEventListener("click", function(){
@@ -279,6 +283,7 @@ menu_button_4.addEventListener("click", function(){
     page_4.classList.add("active")
     page_4.classList.remove("hidden_display")
     page_4.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Курсы'
 })
 
 menu_button_5.addEventListener("click", function(){
@@ -330,6 +335,7 @@ menu_button_5.addEventListener("click", function(){
     page_5.classList.add("active")
     page_5.classList.remove("hidden_display")
     page_5.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Контакты'
 })
 
 menu_button_6.addEventListener("click", function(){
@@ -381,6 +387,7 @@ menu_button_6.addEventListener("click", function(){
     page_6.classList.add("active")
     page_6.classList.remove("hidden_display")
     page_6.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Полезно'
 })
 
 menu_button_7.addEventListener("click", function(){
@@ -432,6 +439,7 @@ menu_button_7.addEventListener("click", function(){
     page_7.classList.add("active")
     page_7.classList.remove("hidden_display")
     page_7.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Хендлинг зал'
 })
 
 menu_button_8.addEventListener("click", function(){
@@ -483,6 +491,7 @@ menu_button_8.addEventListener("click", function(){
     page_8.classList.add("active")
     page_8.classList.remove("hidden_display")
     page_8.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Привелегии клуба'
 })
 
 menu_button_9.addEventListener("click", function(){
@@ -534,6 +543,7 @@ menu_button_9.addEventListener("click", function(){
     page_9.classList.add("active")
     page_9.classList.remove("hidden_display")
     page_9.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Наши партнёры'
 })
 
 menu_button_10.addEventListener("click", function(){
@@ -585,6 +595,7 @@ menu_button_10.addEventListener("click", function(){
     page_10.classList.add("active")
     page_10.classList.remove("hidden_display")
     page_10.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Мероприятия'
 })
 
 phone_menu_button_1.addEventListener("click", function(){
@@ -637,6 +648,7 @@ phone_menu_button_1.addEventListener("click", function(){
     page_1.classList.add("active")
     page_1.classList.remove("hidden_display")
     page_1.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный"'
 })
 
 phone_menu_button_2.addEventListener("click", function(){
@@ -688,6 +700,7 @@ phone_menu_button_2.addEventListener("click", function(){
     page_2.classList.add("active")
     page_2.classList.remove("hidden_display")
     page_2.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Вступить в клуб'
 })
 
 phone_menu_button_3.addEventListener("click", function(){
@@ -739,6 +752,7 @@ phone_menu_button_3.addEventListener("click", function(){
     page_3.classList.add("active")
     page_3.classList.remove("hidden_display")
     page_3.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Услуги'
 })
 
 phone_menu_button_4.addEventListener("click", function(){
@@ -790,6 +804,7 @@ phone_menu_button_4.addEventListener("click", function(){
     page_4.classList.add("active")
     page_4.classList.remove("hidden_display")
     page_4.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Курсы'
 })
 
 phone_menu_button_5.addEventListener("click", function(){
@@ -841,6 +856,7 @@ phone_menu_button_5.addEventListener("click", function(){
     page_5.classList.add("active")
     page_5.classList.remove("hidden_display")
     page_5.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Контакты'
 })
 
 phone_menu_button_6.addEventListener("click", function(){
@@ -892,6 +908,7 @@ phone_menu_button_6.addEventListener("click", function(){
     page_6.classList.add("active")
     page_6.classList.remove("hidden_display")
     page_6.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Полезно'
 })
 
 phone_menu_button_7.addEventListener("click", function(){
@@ -943,6 +960,7 @@ phone_menu_button_7.addEventListener("click", function(){
     page_7.classList.add("active")
     page_7.classList.remove("hidden_display")
     page_7.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Хендлинг зал'
 })
 
 phone_menu_button_8.addEventListener("click", function(){
@@ -994,6 +1012,7 @@ phone_menu_button_8.addEventListener("click", function(){
     page_8.classList.add("active")
     page_8.classList.remove("hidden_display")
     page_8.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Привелегии клуба'
 })
 
 phone_menu_button_9.addEventListener("click", function(){
@@ -1045,6 +1064,7 @@ phone_menu_button_9.addEventListener("click", function(){
     page_9.classList.add("active")
     page_9.classList.remove("hidden_display")
     page_9.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Наши партнёры'
 })
 
 phone_menu_button_10.addEventListener("click", function(){
@@ -1096,6 +1116,7 @@ phone_menu_button_10.addEventListener("click", function(){
     page_10.classList.add("active")
     page_10.classList.remove("hidden_display")
     page_10.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Мероприятия'
 })
 
 lesson_button_1.addEventListener("click", function(){
@@ -1147,6 +1168,7 @@ lesson_button_1.addEventListener("click", function(){
     lesson_page_1.classList.add("active")
     lesson_page_1.classList.remove("hidden_display")
     lesson_page_1.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | ОКД - Общий Курс Дрессировки'
 })
 
 lesson_button_2.addEventListener("click", function(){
@@ -1198,6 +1220,7 @@ lesson_button_2.addEventListener("click", function(){
     lesson_page_2.classList.add("active")
     lesson_page_2.classList.remove("hidden_display")
     lesson_page_2.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Курс "СОЦИАЛИЗАЦИЯ ЩЕНКА"'
 })
 
 lesson_button_3.addEventListener("click", function(){
@@ -1249,6 +1272,7 @@ lesson_button_3.addEventListener("click", function(){
     lesson_page_3.classList.add("active")
     lesson_page_3.classList.remove("hidden_display")
     lesson_page_3.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | ОКП - Общий Курс Послушания'
 })
 
 lesson_button_4.addEventListener("click", function(){
@@ -1300,6 +1324,7 @@ lesson_button_4.addEventListener("click", function(){
     lesson_page_4.classList.add("active")
     lesson_page_4.classList.remove("hidden_display")
     lesson_page_4.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | ОКП - Продвинутый Курс Послушания'
 })
 
 mobile_lesson_button_1.addEventListener("click", function(){
@@ -1351,6 +1376,7 @@ mobile_lesson_button_1.addEventListener("click", function(){
     lesson_page_1.classList.add("active")
     lesson_page_1.classList.remove("hidden_display")
     lesson_page_1.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | ОКД - Общий Курс Дрессировки'
 })
 
 mobile_lesson_button_2.addEventListener("click", function(){
@@ -1402,6 +1428,7 @@ mobile_lesson_button_2.addEventListener("click", function(){
     lesson_page_2.classList.add("active")
     lesson_page_2.classList.remove("hidden_display")
     lesson_page_2.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Курс "СОЦИАЛИЗАЦИЯ ЩЕНКА"'
 })
 
 mobile_lesson_button_3.addEventListener("click", function(){
@@ -1453,6 +1480,7 @@ mobile_lesson_button_3.addEventListener("click", function(){
     lesson_page_3.classList.add("active")
     lesson_page_3.classList.remove("hidden_display")
     lesson_page_3.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | ОКП - Общий Курс Послушания'
 })
 
 mobile_lesson_button_4.addEventListener("click", function(){
@@ -1504,6 +1532,7 @@ mobile_lesson_button_4.addEventListener("click", function(){
     lesson_page_4.classList.add("active")
     lesson_page_4.classList.remove("hidden_display")
     lesson_page_4.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | ОКП - Продвинутый Курс Послушания'
 })
 
 useful_button_1.addEventListener("click", function(){
