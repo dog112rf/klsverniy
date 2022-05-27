@@ -1153,6 +1153,7 @@ lesson_button_1.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_2.classList.add("hidden_display")
     lesson_page_3.classList.add("hidden_display")
     lesson_page_4.classList.add("hidden_display")
@@ -1205,6 +1206,7 @@ lesson_button_2.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_1.classList.add("hidden_display")
     lesson_page_3.classList.add("hidden_display")
     lesson_page_4.classList.add("hidden_display")
@@ -1257,6 +1259,7 @@ lesson_button_3.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_1.classList.add("hidden_display")
     lesson_page_2.classList.add("hidden_display")
     lesson_page_4.classList.add("hidden_display")
@@ -1309,6 +1312,7 @@ lesson_button_4.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_1.classList.add("hidden_display")
     lesson_page_2.classList.add("hidden_display")
     lesson_page_3.classList.add("hidden_display")
@@ -1361,6 +1365,7 @@ mobile_lesson_button_1.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_2.classList.add("hidden_display")
     lesson_page_3.classList.add("hidden_display")
     lesson_page_4.classList.add("hidden_display")
@@ -1413,6 +1418,7 @@ mobile_lesson_button_2.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_1.classList.add("hidden_display")
     lesson_page_3.classList.add("hidden_display")
     lesson_page_4.classList.add("hidden_display")
@@ -1465,6 +1471,7 @@ mobile_lesson_button_3.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_1.classList.add("hidden_display")
     lesson_page_2.classList.add("hidden_display")
     lesson_page_4.classList.add("hidden_display")
@@ -1517,6 +1524,7 @@ mobile_lesson_button_4.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_1.classList.add("hidden_display")
     lesson_page_2.classList.add("hidden_display")
     lesson_page_3.classList.add("hidden_display")
@@ -1569,6 +1577,7 @@ useful_button_1.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_1.classList.add("hidden_display")
     lesson_page_2.classList.add("hidden_display")
     lesson_page_3.classList.add("hidden_display")
@@ -1584,6 +1593,7 @@ useful_button_1.addEventListener("click", function(){
     useful_page_1.classList.add("active")
     useful_page_1.classList.remove("hidden_display")
     useful_page_1.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Ветеринарные службы города'
 })
 
 useful_button_2.addEventListener("click", function(){
@@ -1620,6 +1630,7 @@ useful_button_2.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_1.classList.add("hidden_display")
     lesson_page_2.classList.add("hidden_display")
     lesson_page_3.classList.add("hidden_display")
@@ -1635,6 +1646,7 @@ useful_button_2.addEventListener("click", function(){
     useful_page_2.classList.add("active")
     useful_page_2.classList.remove("hidden_display")
     useful_page_2.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Новости'
 })
 
 useful_button_3.addEventListener("click", function(){
@@ -1671,6 +1683,7 @@ useful_button_3.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_1.classList.add("hidden_display")
     lesson_page_2.classList.add("hidden_display")
     lesson_page_3.classList.add("hidden_display")
@@ -1686,6 +1699,7 @@ useful_button_3.addEventListener("click", function(){
     useful_page_3.classList.add("active")
     useful_page_3.classList.remove("hidden_display")
     useful_page_3.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Мероприятия'
 })
 
 useful_button_4.addEventListener("click", function(){
@@ -1722,6 +1736,7 @@ useful_button_4.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_1.classList.add("hidden_display")
     lesson_page_2.classList.add("hidden_display")
     lesson_page_3.classList.add("hidden_display")
@@ -1737,6 +1752,7 @@ useful_button_4.addEventListener("click", function(){
     useful_page_4.classList.add("active")
     useful_page_4.classList.remove("hidden_display")
     useful_page_4.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Породы собак'
 })
 
 useful_button_5.addEventListener("click", function(){
@@ -1773,6 +1789,7 @@ useful_button_5.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_1.classList.add("hidden_display")
     lesson_page_2.classList.add("hidden_display")
     lesson_page_3.classList.add("hidden_display")
@@ -1788,6 +1805,7 @@ useful_button_5.addEventListener("click", function(){
     useful_page_5.classList.add("active")
     useful_page_5.classList.remove("hidden_display")
     useful_page_5.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Галерея'
 })
 
 mobile_useful_button_1.addEventListener("click", function(){
@@ -1824,6 +1842,7 @@ mobile_useful_button_1.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_1.classList.add("hidden_display")
     lesson_page_2.classList.add("hidden_display")
     lesson_page_3.classList.add("hidden_display")
@@ -1839,6 +1858,7 @@ mobile_useful_button_1.addEventListener("click", function(){
     useful_page_1.classList.add("active")
     useful_page_1.classList.remove("hidden_display")
     useful_page_1.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Ветеринарные службы города'
 })
 
 mobile_useful_button_2.addEventListener("click", function(){
@@ -1875,6 +1895,7 @@ mobile_useful_button_2.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_1.classList.add("hidden_display")
     lesson_page_2.classList.add("hidden_display")
     lesson_page_3.classList.add("hidden_display")
@@ -1890,6 +1911,7 @@ mobile_useful_button_2.addEventListener("click", function(){
     useful_page_2.classList.add("active")
     useful_page_2.classList.remove("hidden_display")
     useful_page_2.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Новости'
 })
 
 mobile_useful_button_3.addEventListener("click", function(){
@@ -1926,6 +1948,7 @@ mobile_useful_button_3.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_1.classList.add("hidden_display")
     lesson_page_2.classList.add("hidden_display")
     lesson_page_3.classList.add("hidden_display")
@@ -1941,6 +1964,7 @@ mobile_useful_button_3.addEventListener("click", function(){
     useful_page_3.classList.add("active")
     useful_page_3.classList.remove("hidden_display")
     useful_page_3.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Мероприятия'
 })
 
 mobile_useful_button_4.addEventListener("click", function(){
@@ -1977,6 +2001,7 @@ mobile_useful_button_4.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_1.classList.add("hidden_display")
     lesson_page_2.classList.add("hidden_display")
     lesson_page_3.classList.add("hidden_display")
@@ -1992,6 +2017,7 @@ mobile_useful_button_4.addEventListener("click", function(){
     useful_page_4.classList.add("active")
     useful_page_4.classList.remove("hidden_display")
     useful_page_4.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Породы собак'
 })
 
 mobile_useful_button_5.addEventListener("click", function(){
@@ -2028,6 +2054,7 @@ mobile_useful_button_5.addEventListener("click", function(){
     page_7.classList.add("hidden_display")   
     page_9.classList.add("hidden_display")  
     page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
     lesson_page_1.classList.add("hidden_display")
     lesson_page_2.classList.add("hidden_display")
     lesson_page_3.classList.add("hidden_display")
@@ -2043,4 +2070,5 @@ mobile_useful_button_5.addEventListener("click", function(){
     useful_page_5.classList.add("active")
     useful_page_5.classList.remove("hidden_display")
     useful_page_5.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Галерея'
 })
