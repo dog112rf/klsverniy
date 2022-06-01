@@ -5,12 +5,1021 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Клуб Любителей Собак "Верный"</title>
-    <link rel="stylesheet" href="/style/style.css">
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
   />
     <link rel="shortcut icon" href="/assets/KLS.png">
+    <style>
+        img {
+  display: block;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+    display: none;
+}
+
+iframe {
+  display: block;
+  transition: opacity 0.3s;
+}
+
+iframe[data-src] {
+    display: none;
+}
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); /* Fonts */
+
+
+html {
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    transition: .5s;
+    background: rgb(255, 255, 255);
+}
+
+header {
+    text-align: left;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25%;
+}
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_image_container img {
+    width: 100%;
+    transition: .5s;
+}
+
+.header_image_container {
+    width: 10%;
+    padding: 1%;
+}
+
+.header_text_container {
+    width: 100%;
+}
+
+.header_logo_container {
+    display: flex;
+    justify-content: right;
+    margin-right: 1%;
+    width: 30%;
+    align-items: center;
+}
+
+.site_title {
+    margin: 0.5%;
+    font-size: 25px;
+    width: 100%;
+    transition: .5s;
+    text-align: center;
+}
+
+.site_adress {
+    margin: 0.5%;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    transition: .5s;
+    text-align: center;
+}
+
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5%;
+    background: rgb(26, 0, 73);
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu_button {
+    color: rgb(183, 144, 255);
+    text-decoration: none;
+    margin: 0.5%;
+    transition: .5s;
+}
+
+.menu_button:hover {
+    color: rgb(240, 240, 240);
+}
+
+.page {
+    margin: 5px;
+    transition: .5s;
+    margin-top: 4%;
+}
+
+.page_title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    color: #00ff00;
+}
+
+.page_content {
+    text-align: center;
+}
+
+.page_text_block{
+    background: rgb(26, 0, 73);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    color: rgb(234, 226, 255);
+    margin-top: .5%;
+    margin-bottom: .5%;
+    text-align: left;
+}
+
+.page_text_block_content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+}
+
+.active {
+    opacity: 1;
+}
+
+.active_display{
+    display: block;
+}
+
+.hidden {
+    opacity: 0;
+    margin-top: 10%;
+}
+
+
+.download_button {
+    background: rgb(26, 0, 73);
+    color: #00ff00;
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:focus
+{outline: 0; outline-offset: 0;}
+
+.text_prefix {
+    width: 2%;
+    margin: 5px;
+}
+
+.veterinar_image {
+    width: 100%;
+}
+
+.page_text_block_content a {
+  color: rgb(183, 144, 255);;
+  transition: .5s;
+}
+
+.page_text_block_content a:hover {
+  color: rgb(240, 240, 240);
+}
+
+.text_link {
+    color: rgb(183, 144, 255);
+    text-decoration: none;
+    transition: .5s;
+}
+
+.text_link:hover {
+    color: rgb(240, 240, 240);
+}
+
+.handling_gallery_image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.handling_gallery_image_container {
+    text-decoration: none;
+    margin: 0.5%;
+}
+
+.handling_gallery {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.champion_image {
+    width: 100%;
+}
+
+.social_container {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1%;
+}
+
+.social_icon {
+    width: 100%;
+    transition: 1s;
+}
+
+.social_button {
+display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.theme_changer_button {
+  display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.theme_changer_button img {
+  display: block!important
+}
+
+.vision_changer_button {
+  display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.social_button img {
+  display: block!important
+}
+
+#theme_changer_image {
+  display: block!important
+}
+
+#theme_changer_image_2 {
+  display: block!important
+}
+
+#vision_changer_image {
+  display: block!important
+}
+
+
+.social_icon:hover {
+  filter: brightness(300%);
+}
+
+.theme_changer_icon:hover {
+  filter: brightness(300%);
+}
+
+.visible {
+    display: block;
+}
+
+
+.dark {
+    background: rgb(7, 7, 7);
+}
+
+.dark .page_title {
+    color: rgb(234, 226, 255);
+}
+
+.dark .site_title {
+    color: rgb(234, 226, 255);
+}
+
+.dark .site_adress {
+    color: rgb(234, 226, 255);
+}
+
+.dark .carousel__dots .carousel__dot {
+    color: rgb(234, 226, 255);
+}
+
+.low_vision img {
+  display: none;
+}
+
+.low_vision a {
+  font-size: 20px!important
+}
+
+.low_vision h1 {
+  font-size: 40px!important
+}
+
+.low_vision h2 {
+  font-size: 35px!important
+}
+
+.low_vision h3 {
+  font-size: 30px!important
+}
+
+.low_vision h4 {
+  font-size: 25px!important
+}
+
+.low_vision p {
+    font-size: 20px!important
+}
+
+.low_vision .social_container {
+  width: 20%;
+  display: flex;
+  align-items: stretch;
+  /* margin-right: 1%; */
+  justify-content: flex-end;
+  align-content: space-around;
+}
+
+.low_vision .carousel {
+  display: none;
+}
+
+.low_vision .site_title {
+  text-align: center;
+}
+
+.low_vision .site_adress {
+  text-align: center;
+}
+
+.dropdown-content a {
+  font-size: 15px;
+}
+
+.carousel__button {
+  color: white!important;
+}
+
+.page_text_block_content p{
+  font-weight: lighter;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background: none;
+  color: rgb(183, 144, 255);
+  text-decoration: none;
+  transition: .5s;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0.5%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: rgb(26, 0, 73);
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(183, 144, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(36, 0, 102);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+  
+  /* Menu Styles */
+  
+  .primary-nav {
+      position: fixed;
+      z-index: 999;
+  }
+  
+  .phone_menu {
+      position: relative;
+  }
+  
+  .phone_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+      
+  }
+  
+  .open-panel {
+    border: none;
+    background-color:#fff;
+    padding: 0;
+  }
+  
+  .hamburger {
+    background: rgb(26, 0, 73);
+      position: fixed;
+      display: none;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      left: 2%;
+      top: 1%;
+      padding: 1px;
+      z-index: 1000;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 5px;
+    
+  }
+
+  .menu_opener {
+    width: 50px;
+    height: 50px;
+    content:"\2630";
+    display: block;
+    position: fixed;
+    color: rgb(0, 0, 0);
+  }
+  
+  .hamburger:before {
+      content:"\2630"; /* hamburger icon */
+      display: block;
+      color: rgb(183, 144, 255);
+    line-height: 32px;
+    font-size: 16px;
+  }
+
+  .dark .hamburger:before {
+    content:"\2630"; /* hamburger icon */
+    display: block;
+  color: rgb(255, 255, 255);
+  line-height: 32px;
+  font-size: 16px;
+}
+  
+  .openNav .hamburger:before {
+      content:"\2715"; /* close icon */
+      display: block;
+    color: rgb(255, 255, 255);
+    line-height: 32px;
+    font-size: 16px;
+  }
+  
+  .hamburger:hover:before {
+    color: rgb(183, 144, 255);
+  }
+
+  .dark .hamburger:hover:before {
+    color: rgb(183, 144, 255);
+  }
+  
+  .primary-nav .phone_menu li {
+      position: relative;
+  }
+  
+  .phone_menu .icon {
+      position: absolute;
+      top: 12px;
+      right: 10px;
+      pointer-events: none;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+  }
+  
+  .phone_menu,
+  .phone_menu a,
+  .phone_menu a:visited {
+    text-decoration: none!important;
+      position: relative;
+  }
+  
+  .phone_menu a {
+    display: block;
+    white-space: nowrap;
+    padding: 1em;
+    font-size: 14px;
+  }
+  
+  .phone_menu a:hover {
+      color: #fff;
+  }
+  
+  .phone_menu {
+      margin-bottom: 3em;
+  }
+  
+  .menu-dropdown li .icon {
+      color: #777;
+  }
+  
+  .menu-dropdown li:hover .icon {
+      color: #fff;
+  }
+  
+  
+  
+  .phone_menu label {
+    margin-bottom: 0;
+    display: block;
+  }
+  
+  .phone_menu label:hover {
+    cursor: pointer;
+  }
+  
+  .phone_menu input[type="checkbox"] {
+    display: none;
+  }
+  
+  input#menu[type="checkbox"] {
+    display: none;
+  }
+  
+  
+  
+  
+  
+  
+  .sub-menu-dropdown {
+      display: none;
+  }
+  
+  .new-wrapper {
+      position: absolute;
+      left: 50px;
+    width: calc(100% - 50px);
+    transition: transform .45s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  
+  #menu:checked + ul.menu-dropdown {
+      
+          left: 0;
+      -webkit-animation: all .45s cubic-bezier(0.77, 0, 0.175, 1);
+              animation: all .45s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  
+  .sub-menu-checkbox:checked + ul.sub-menu-dropdown {
+      display: block!important;
+      -webkit-animation: grow .45s cubic-bezier(0.77, 0, 0.175, 1);
+              animation: grow .45s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  
+  
+  .openNav .new-wrapper {
+    position: absolute;
+    transform: translate3d(200px, 0, 0);
+    width: calc(100% - 250px);
+    transition: transform .45s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  
+  
+  .downarrow {
+    background: transparent;
+      position: absolute;
+      right: 50px;
+      top: 12px;
+    color: #777;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    display: block;
+  }
+  
+  .downarrow:hover {
+    color: #fff;
+  }
+  
+  .phone_menu {
+      position: absolute;
+      display: block;
+      left: -200px;
+    top: 0;
+      width: 250px;
+    transition: all 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+    background-color: #000;
+      z-index: 999;
+  }
+  
+  .menu-dropdown {
+    top: 0;
+    overflow-y: auto;
+  }
+  
+  .overflow-container {
+    position: relative;
+    background: rgb(26, 0, 73);
+    height: calc(100vh - 73px)!important;
+    overflow-y: auto;
+    border-top: 73px solid rgb(26, 0, 73);;
+    z-index: -1;
+    display:block;
+  }
+  
+  .phone_menu a.logotype {
+    position: absolute!important;
+    top: 11px;
+    left: 55px;
+    display: block;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #000;
+    font-size: 21px;
+    padding: 10px;
+  }
+  
+  .phone_menu a.logotype span {
+    font-weight: 400;
+  }
+  
+  .phone_menu a.logotype:hover {
+    color: #777;
+  }
+  
+  .sub-menu-dropdown {
+      background-color: #333;
+  }
+  
+  .phone_menu:hover {
+      position: absolute;
+      left: 0;
+      top: 0;
+  }
+  
+  .openNav .phone_menu:hover {
+      position: absolute;
+      left: -200px;
+  }
+  
+  .openNav .phone_menu {
+          transform: translate3d(200px, 0, 0);
+      transition: transform .45s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+      
+      /* label.hamburger {
+          display: none;
+      } */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* look and feel only, not needed for core menu*/
+  
+  @-webkit-keyframes grow {
+      
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    50% {
+      display: block;
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+      
+  }
+  
+  @keyframes grow {
+      
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    50% {
+      display: block;
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1
+    }
+      
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Text meant only for screen readers. */
+  
+  .screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+  
+  .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+  }
+
+
+    
+  .sidenav {
+    display: none;
+  }
+  /* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background: rgb(26, 0, 73);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  margin: 0;
+  padding: 0;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  
+#secondary_image {
+  width: 100%;
+}
+
+#theme_changer, #theme_changer_2, #vision_changer {
+  margin-right: 20%;
+}
+
+#page_button {
+  width: 15%; 
+  text-align: center;
+}
+
+.hidden_display{
+  display: none!important
+}
+.page_text_block div iframe {
+width: 100%;
+height: 750px!important
+}
+
+.phone_header_menu {
+  display: none;
+}
+
+.finest_container {
+  text-align: center;
+}
+
+iframe {
+  position: relative;
+  overflow: visible;
+}
+
+#news_block {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#news_block div {
+  height: 680px!important
+}
+
+.finest {
+  color: #000;
+  width: 20%;
+  transition: .5s;
+}
+
+.finest:hover {
+  color: rgb(20, 20, 20);
+}
+
+.dark .finest {
+  color: rgb(183, 144, 255);
+}
+
+.dark .finest:hover {
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .header_menu {
+    display: none;
+  }
+
+  .page {
+    margin-top: 15%;
+  }
+  
+  .phone_header_menu {
+    display: block;
+  }
+
+    
+.sidenav {
+  display: block;
+}
+
+  .site_title{
+    font-size: 15px;
+  }
+
+  .site_adress {
+    font-size: 8px;
+  }
+
+  
+  #news_block div {
+    height: 660px!important
+  }
+
+  header {
+    text-align: left;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    height: 25%;
+    align-content: flex-end;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .header_image_container {
+    width: 20%;
+    margin: 5%;
+  }
+
+  .header_logo_container {
+    width: 85%;
+  }
+
+  .header_text_container {
+    text-align: center;
+  }
+  #secondary_image {
+    width: 100%;
+  }
+
+  #theme_changer, #theme_changer_2 {
+    margin-right: 0;
+  }
+
+  .social_container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page_text_block {
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
+  }
+
+  .text_prefix {
+    width: 4%;
+  }
+
+  #page_button {
+    width: 50%; 
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+  }
+
+  .low_vision .social_container {
+    width: 50%;
+  }
+  .page_text_block_content {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+    </style>
 </head>
 <body id="body">
     <span onclick="openNav()" id="hamburger_opener" class="hamburger"></span>
@@ -42,19 +1051,19 @@
     <a href="javascript:void(0);" class="menu_button" onclick="closeNav()" id="phone_menu_button_9">Наши партнёры</a>
     <a href="javascript:void(0);" class="menu_button" onclick="closeNav()" id="phone_menu_button_10">Мероприятия</a>
     <div class="social_container">
-            <a href="javascript:void(0);" onclick="closeNav()" class="vision_changer_button" id="mobile_vision_changer"><img src="/assets/eye.png" id="vision_changer_image" alt="" class="social_icon"></a>
-            <a href="javascript:void(0);" onclick="closeNav()" class="theme_changer_button" id="mobile_theme_changer"><img src="/assets/moon.png" id="theme_changer_image" alt="" class="social_icon"></a>
-            <a href="javascript:void(0);" onclick="closeNav()" class="theme_changer_button" id="mobile_theme_changer_2"><img src="/assets/sun.png" id="theme_changer_image_2" alt="" class="social_icon"></a>
-            <a href="https://vk.com/klsvernii" onclick="closeNav()" target="_blank" class="social_button"><img src="/assets/vk.png" alt="" class="social_icon"></a>
-            <a href="https://www.instagram.com/klsvernyi/" onclick="closeNav()" target="_blank" class="social_button"><img src="/assets/instagram.png" alt="" class="social_icon"></a>
-            <a href="https://www.facebook.com/klsvernii/" onclick="closeNav()" target="_blank" class="social_button"><img src="/assets/facebook.png" alt="" class="social_icon"></a>
+            <a href="javascript:void(0);" onclick="closeNav()" class="vision_changer_button" id="mobile_vision_changer"><img data-src="/assets/eye.png" id="vision_changer_image" alt="" class="social_icon"></a>
+            <a href="javascript:void(0);" onclick="closeNav()" class="theme_changer_button" id="mobile_theme_changer"><img data-src="/assets/moon.png" id="theme_changer_image" alt="" class="social_icon"></a>
+            <a href="javascript:void(0);" onclick="closeNav()" class="theme_changer_button" id="mobile_theme_changer_2"><img data-src="/assets/sun.png" id="theme_changer_image_2" alt="" class="social_icon"></a>
+            <a href="https://vk.com/klsvernii" onclick="closeNav()" target="_blank" class="social_button"><img data-src="/assets/vk.png" alt="" class="social_icon"></a>
+            <a href="https://www.instagram.com/klsvernyi/" onclick="closeNav()" target="_blank" class="social_button"><img data-src="/assets/instagram.png" alt="" class="social_icon"></a>
+            <a href="https://www.facebook.com/klsvernii/" onclick="closeNav()" target="_blank" class="social_button"><img data-src="/assets/facebook.png" alt="" class="social_icon"></a>
         </div>
       </div>
     <div id="main" onclick="closeNav()">
     <header>
         <div class="header_image_container">
-            <img src="/assets/KLS.png" alt="" id="KLS_1">
-            <img src="/assets/KLS2.png" alt="" id="KLS_2">
+            <img data-src="/assets/KLS.png" alt="" id="KLS_1">
+            <img data-src="/assets/KLS2.png" alt="" id="KLS_2">
         </div>
         <div class="header_text_container">
             <h1 class="site_title">РЕГИОНАЛЬНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ КЛУБ ЛЮБИТЕЛЕЙ СОБАК "ВЕРНЫЙ" РБ</h1>
@@ -62,16 +1071,16 @@
         </div>
         <div class="header_logo_container">
         <div class="header_image_container" id="secondary_image">
-            <img src="/assets/FCI.png" alt="" id="FCI_1">
-            <img src="/assets/FCI2.png" alt="" id="FCI_2">
+            <img data-src="/assets/FCI.png" alt="" id="FCI_1">
+            <img data-src="/assets/FCI2.png" alt="" id="FCI_2">
         </div>
         <div class="header_image_container" id="secondary_image">
-            <img src="/assets/RFSS.png" alt="" id="RFSS_1">
-            <img src="/assets/RFSS2.png" alt="" id="RFSS_2">
+            <img data-src="/assets/RFSS.png" alt="" id="RFSS_1">
+            <img data-src="/assets/RFSS2.png" alt="" id="RFSS_2">
         </div>
         <div class="header_image_container" id="secondary_image">
-            <img src="/assets/RKF.png" alt="" id="RKF_1">
-            <img src="/assets/RKF2.png" alt="" id="RKF_2">
+            <img data-src="/assets/RKF.png" alt="" id="RKF_1">
+            <img data-src="/assets/RKF2.png" alt="" id="RKF_2">
         </div>
     </div>
     </header>
@@ -104,28 +1113,28 @@
             <a href="javascript:void(0);" class="menu_button" id="menu_button_10">Мероприятия</a>
         </nav>
         <div class="social_container">
-            <a href="javascript:void(0);" class="social_button" id="vision_changer"><img src="/assets/eye.png" id="vision_changer_image" alt="" class="social_icon"></a>
-            <a href="javascript:void(0);" class="social_button" id="theme_changer"><img src="/assets/moon.png" id="theme_changer_image" alt="" class="social_icon"></a>
-            <a href="javascript:void(0);" class="social_button" id="theme_changer_2"><img src="/assets/sun.png" id="theme_changer_image_2" alt="" class="social_icon"></a>
-            <a href="https://vk.com/klsvernii" target="_blank" class="social_button"><img src="/assets/vk.png" alt="" class="social_icon"></a>
-            <a href="https://www.instagram.com/klsvernyi/" target="_blank" class="social_button"><img src="/assets/instagram.png" alt="" class="social_icon"></a>
-            <a href="https://www.facebook.com/klsvernii/"target="_blank" class="social_button"><img src="/assets/facebook.png" alt="" class="social_icon"></a>
+            <a href="javascript:void(0);" class="social_button" id="vision_changer"><img data-src="/assets/eye.png" id="vision_changer_image" alt="" class="social_icon"></a>
+            <a href="javascript:void(0);" class="social_button" id="theme_changer"><img data-src="/assets/moon.png" id="theme_changer_image" alt="" class="social_icon"></a>
+            <a href="javascript:void(0);" class="social_button" id="theme_changer_2"><img data-src="/assets/sun.png" id="theme_changer_image_2" alt="" class="social_icon"></a>
+            <a href="https://vk.com/klsvernii" target="_blank" class="social_button"><img data-src="/assets/vk.png" alt="" class="social_icon"></a>
+            <a href="https://www.instagram.com/klsvernyi/" target="_blank" class="social_button"><img data-src="/assets/instagram.png" alt="" class="social_icon"></a>
+            <a href="https://www.facebook.com/klsvernii/"target="_blank" class="social_button"><img data-src="/assets/facebook.png" alt="" class="social_icon"></a>
         </div>
     </div>
         <div class="carousel">
             <div class="carousel__slide">                
                 <a href="https://sun9-88.userapi.com/s/v1/ig1/mW8I50yxCXECtJc0bLdclo4H6kbe_khm-88REERG2qXPgMEob04DmumU1xyovB84gTu91fQN.jpg?size=1024x576&quality=96&type=album" data-fancybox="main_slider_gallery" data-caption="ПЛЕМЕННОЙ СМОТР-1, 08.08.2020">
-                    <img style="height: 200px; width: 100%;     object-fit: cover;" src="https://sun9-88.userapi.com/s/v1/ig1/mW8I50yxCXECtJc0bLdclo4H6kbe_khm-88REERG2qXPgMEob04DmumU1xyovB84gTu91fQN.jpg?size=1024x576&quality=96&type=album" alt="">
+                    <img style="height: 200px; width: 100%;     object-fit: cover;" data-src="https://sun9-88.userapi.com/s/v1/ig1/mW8I50yxCXECtJc0bLdclo4H6kbe_khm-88REERG2qXPgMEob04DmumU1xyovB84gTu91fQN.jpg?size=1024x576&quality=96&type=album" alt="">
                 </a>
             </div>
             <div class="carousel__slide">
                 <a href="https://sun9-84.userapi.com/s/v1/if1/Gihx12f-zXzhbarX7GwbTc_qFGVgeyRsq7ynP3KvE_yJZEq0GhJ4norXX3nIYG5qwlwao059.jpg?size=2560x1707&quality=96&type=album" data-fancybox="main_slider_gallery" data-caption="Выставка собак всех пород 26.05.2019">
-                    <img style="height: 200px; width: 100%;     object-fit: cover;" src="https://sun9-84.userapi.com/s/v1/if1/Gihx12f-zXzhbarX7GwbTc_qFGVgeyRsq7ynP3KvE_yJZEq0GhJ4norXX3nIYG5qwlwao059.jpg?size=2560x1707&quality=96&type=album" alt="">
+                    <img style="height: 200px; width: 100%;     object-fit: cover;" data-src="https://sun9-84.userapi.com/s/v1/if1/Gihx12f-zXzhbarX7GwbTc_qFGVgeyRsq7ynP3KvE_yJZEq0GhJ4norXX3nIYG5qwlwao059.jpg?size=2560x1707&quality=96&type=album" alt="">
                 </a>
             </div>
             <div class="carousel__slide">                
                 <a href="https://sun9-43.userapi.com/s/v1/if1/jHnIkGDqJSp_KHPHYaJXQS10fBcTOYmwHpR9oiGoN-EUkqRavFAF-OAMUb_khC8e043a8Afl.jpg?size=2560x1707&quality=96&type=album" data-fancybox="main_slider_gallery" data-caption="Выставка собак всех пород 26.05.2019">
-                    <img style="height: 200px; width: 100%;     object-fit: cover;" src="https://sun9-43.userapi.com/s/v1/if1/jHnIkGDqJSp_KHPHYaJXQS10fBcTOYmwHpR9oiGoN-EUkqRavFAF-OAMUb_khC8e043a8Afl.jpg?size=2560x1707&quality=96&type=album" alt="">
+                    <img style="height: 200px; width: 100%;     object-fit: cover;" data-src="https://sun9-43.userapi.com/s/v1/if1/jHnIkGDqJSp_KHPHYaJXQS10fBcTOYmwHpR9oiGoN-EUkqRavFAF-OAMUb_khC8e043a8Afl.jpg?size=2560x1707&quality=96&type=album" alt="">
                 </a>
             </div>
           </div>
@@ -136,9 +1145,9 @@
                     <p>РОО КЛС "ВЕРНЫЙ" РБ является Некоммерческой Региональной Общественной Организацией.</p> 
                 </div>
                 <div class="page_text_block">
-                    <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Режим работы:</h4>
-                    <h4 class="page_text_block_content"><img src="/assets/note.png" alt="" class="text_prefix"> По предварительной договоренности.</h4>
-                    <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> 8-905-002-00-72 (WhatsApp)</h4>
+                    <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Режим работы:</h4>
+                    <h4 class="page_text_block_content"><img data-src="/assets/note.png" alt="" class="text_prefix"> По предварительной договоренности.</h4>
+                    <h4 class="page_text_block_content"><img data-src="/assets/phone.png" alt="" class="text_prefix"> 8-905-002-00-72 (WhatsApp)</h4>
                 </div>
                 <div class="page_text_block">
                     <h2 class="page_title">Новости</h2>
@@ -164,9 +1173,9 @@
         <div class="page hidden" id="page_2">
             <div class="page_text_block">
                 <h2 class="page_title">Для вступления в клуб необходимо:</h2>
-                <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Заполнить заявление о вступлении</h4>
-                <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Приложить к заявлению копию родословной или метрики</h4>
-                <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Внести членский вступительный добровольный взнос</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/pin.png" alt="" class="text_prefix"> Заполнить заявление о вступлении</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/pin.png" alt="" class="text_prefix"> Приложить к заявлению копию родословной или метрики</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/pin.png" alt="" class="text_prefix"> Внести членский вступительный добровольный взнос</h4>
             </div>
             <div class="page_text_block" id="page_button">
                 <a href="/assets/Zayavlenie_na_vstuplenie_v_klub_fiz_litso (2).pdf" class="download_button" download>Скачать бланк заявления</a>
@@ -174,27 +1183,27 @@
         </div>
         <div class="page hidden" id="page_3">
             <div class="page_text_block">
-                <h2 class="page_title"><img src="/assets/pin.png" alt="" class="text_prefix"> Оснащение клуба:</h2>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Офис</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Хендлинг зал со снарядами и тренажерами (100 кв.м.)</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Площадка для выгула и дрессировки собак</h4>
+                <h2 class="page_title"><img data-src="/assets/pin.png" alt="" class="text_prefix"> Оснащение клуба:</h2>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Офис</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Хендлинг зал со снарядами и тренажерами (100 кв.м.)</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Площадка для выгула и дрессировки собак</h4>
 
             </div>
             <div class="page_text_block">
-                <h2 class="page_title"><img src="/assets/loudspeaker.png" alt="" class="text_prefix"> Клуб предлагает услуги:</h2>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Оформление документов в РКФ</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Хендлинг</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Выставка собак</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Планирование выставочной карьеры</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Регистрация на выставки</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Клеймение щенков</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Помощь в разведении</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Курсы социализации щенков</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Курсы общего послушания</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> ОКД - Общий Курс Дрессировки</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Профессиональные корма от наших партнеров по клубным ценам</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Амуницию, вакцины, снаряжение, аксессуары по оптовым ценам.</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Аренда хендлинг-зала</h4>
+                <h2 class="page_title"><img data-src="/assets/loudspeaker.png" alt="" class="text_prefix"> Клуб предлагает услуги:</h2>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Оформление документов в РКФ</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Хендлинг</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Выставка собак</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Планирование выставочной карьеры</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Регистрация на выставки</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Клеймение щенков</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Помощь в разведении</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Курсы социализации щенков</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Курсы общего послушания</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> ОКД - Общий Курс Дрессировки</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Профессиональные корма от наших партнеров по клубным ценам</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Амуницию, вакцины, снаряжение, аксессуары по оптовым ценам.</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Аренда хендлинг-зала</h4>
             </div>
         </div>
         <div class="page hidden" id="page_4">
@@ -211,24 +1220,24 @@
             <div style="display: none">
                 <h2 class="page_title">Карта</h2>
                 <div class="page_text_block">
-                    <iframe width="100%" height="500px" src="https://yandex.ru/map-widget/v1/?um=constructor%3A47e2a795debacfe0efae2e0c58db5eaf017a8a389b4725f445990d730265c58c&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+                    <iframe width="100%" height="500px" data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A47e2a795debacfe0efae2e0c58db5eaf017a8a389b4725f445990d730265c58c&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
                 </div>
             </div>
         </div>
         <div class="page hidden" id="page_5">
             <div class="page_text_block">
                 <h2 class="page_title">Контакты :</h2>
-                <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix">+7 (905) 002-00-72 (WhatsApp)</h4>
-                <h4 class="page_text_block_content"><img src="/assets/mail.png" alt="" class="text_prefix">klsvernyi@mail.ru</h4>
-                <h4 class="page_text_block_content"><img src="/assets/geopin.png" alt="" class="text_prefix">г. Нефтекамск, ул. Строителей, д. 89 "А"</h4>
-                <h4 class="page_text_block_content"><img src="/assets/vk.png" alt="" class="text_prefix">&nbsp;<a href="https://vk.com/klsvernii" target="_blank">https://vk.com/klsvernii</a></h4>
-                <h4 class="page_text_block_content"><img src="/assets/instagram.png" alt="" class="text_prefix">&nbsp;<a href="https://www.instagram.com/klsvernyi/" target="_blank">https://www.instagram.com/klsvernyi/</a></h4>
-                <h4 class="page_text_block_content"><img src="/assets/facebook.png" alt="" class="text_prefix">&nbsp; <a href="https://www.facebook.com/klsvernii/" target="_blank">https://www.facebook.com/klsvernii/</a></h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/phone.png" alt="" class="text_prefix">+7 (905) 002-00-72 (WhatsApp)</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/mail.png" alt="" class="text_prefix">klsvernyi@mail.ru</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/geopin.png" alt="" class="text_prefix">г. Нефтекамск, ул. Строителей, д. 89 "А"</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/vk.png" alt="" class="text_prefix">&nbsp;<a href="https://vk.com/klsvernii" target="_blank">https://vk.com/klsvernii</a></h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/instagram.png" alt="" class="text_prefix">&nbsp;<a href="https://www.instagram.com/klsvernyi/" target="_blank">https://www.instagram.com/klsvernyi/</a></h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/facebook.png" alt="" class="text_prefix">&nbsp; <a href="https://www.facebook.com/klsvernii/" target="_blank">https://www.facebook.com/klsvernii/</a></h4>
                 <h4 class="page_text_block_content">Сайт сделан&nbsp;<a href="https://www.facebook.com/klsvernii/" target="_blank">Finest.</a></h4>
             </div>
             <div class="page_text_block">
                 <h2 class="page_title">Карта</h2>
-                <iframe width="100%" height="500px" src="https://yandex.ru/map-widget/v1/?um=constructor%3A47e2a795debacfe0efae2e0c58db5eaf017a8a389b4725f445990d730265c58c&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+                <iframe width="100%" height="500px" data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A47e2a795debacfe0efae2e0c58db5eaf017a8a389b4725f445990d730265c58c&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
             </div>
             <div class="page_text_block">
                 <h2 class="page_title">Реквизиты :</h2>
@@ -270,28 +1279,28 @@
                 <h2 class="page_title">Хендлинг Зал</h2>
                 <div class="handling_gallery">
                     <a class="handling_gallery_image_container" href="https://sun9-13.userapi.com/s/v1/ig2/qGsMrMC10bHcBar9ZfPF1juUVfjre-I-cL-TfEI0WtSRTZ4m5wenPCFkVCVgocwrmRM8yNHqpV7Ba-VRNf0Vo3B7.jpg?size=1600x1200&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
-                        <img src="https://sun9-13.userapi.com/s/v1/ig2/qGsMrMC10bHcBar9ZfPF1juUVfjre-I-cL-TfEI0WtSRTZ4m5wenPCFkVCVgocwrmRM8yNHqpV7Ba-VRNf0Vo3B7.jpg?size=1600x1200&quality=96&type=album" alt="" class="handling_gallery_image">
+                        <img data-src="https://sun9-13.userapi.com/s/v1/ig2/qGsMrMC10bHcBar9ZfPF1juUVfjre-I-cL-TfEI0WtSRTZ4m5wenPCFkVCVgocwrmRM8yNHqpV7Ba-VRNf0Vo3B7.jpg?size=1600x1200&quality=96&type=album" alt="" class="handling_gallery_image">
                     </a>
                     <a class="handling_gallery_image_container" href="https://sun9-26.userapi.com/s/v1/ig2/lO_Bra-_iS_nplRT6sUlJHlepMztljbq5FKEkmPrfnsnF2DNLZYxGPLnZjQCHoJWhw3h28HvrnMBNhgR08ycva8m.jpg?size=1600x1200&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
-                        <img src="https://sun9-26.userapi.com/s/v1/ig2/lO_Bra-_iS_nplRT6sUlJHlepMztljbq5FKEkmPrfnsnF2DNLZYxGPLnZjQCHoJWhw3h28HvrnMBNhgR08ycva8m.jpg?size=1600x1200&quality=96&type=album" alt="" class="handling_gallery_image">
+                        <img data-src="https://sun9-26.userapi.com/s/v1/ig2/lO_Bra-_iS_nplRT6sUlJHlepMztljbq5FKEkmPrfnsnF2DNLZYxGPLnZjQCHoJWhw3h28HvrnMBNhgR08ycva8m.jpg?size=1600x1200&quality=96&type=album" alt="" class="handling_gallery_image">
                     </a>
                     <a class="handling_gallery_image_container" href="https://sun9-17.userapi.com/s/v1/ig2/yajCXGgB_i7Wy7jL87Z1kmkDnF0UobO0i3QytyA0CqvTbRkb8U9rzWziGaUS2CzlsdL-hFLMh3zt5QonkOmz77HM.jpg?size=1600x1200&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
-                        <img src="https://sun9-17.userapi.com/s/v1/ig2/yajCXGgB_i7Wy7jL87Z1kmkDnF0UobO0i3QytyA0CqvTbRkb8U9rzWziGaUS2CzlsdL-hFLMh3zt5QonkOmz77HM.jpg?size=1600x1200&quality=96&type=album" alt="" class="handling_gallery_image">
+                        <img data-src="https://sun9-17.userapi.com/s/v1/ig2/yajCXGgB_i7Wy7jL87Z1kmkDnF0UobO0i3QytyA0CqvTbRkb8U9rzWziGaUS2CzlsdL-hFLMh3zt5QonkOmz77HM.jpg?size=1600x1200&quality=96&type=album" alt="" class="handling_gallery_image">
                     </a>
                     <a class="handling_gallery_image_container" href="https://sun9-78.userapi.com/s/v1/ig2/CtAU5D-BcvhCJYHwsiI6AGbkeCAqWH2Yv_9l8ITjAhpdbimoShZhLN3YAjqJg7zIjHbICHBA7q8ZRz9Ql_8ohGH_.jpg?size=1600x1200&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
-                        <img src="https://sun9-78.userapi.com/s/v1/ig2/CtAU5D-BcvhCJYHwsiI6AGbkeCAqWH2Yv_9l8ITjAhpdbimoShZhLN3YAjqJg7zIjHbICHBA7q8ZRz9Ql_8ohGH_.jpg?size=1600x1200&quality=96&type=album" alt="" class="handling_gallery_image">
+                        <img data-src="https://sun9-78.userapi.com/s/v1/ig2/CtAU5D-BcvhCJYHwsiI6AGbkeCAqWH2Yv_9l8ITjAhpdbimoShZhLN3YAjqJg7zIjHbICHBA7q8ZRz9Ql_8ohGH_.jpg?size=1600x1200&quality=96&type=album" alt="" class="handling_gallery_image">
                     </a>
                     <a class="handling_gallery_image_container" href="https://sun1-57.userapi.com/s/v1/ig2/tOIqU6d6lLMXUD_dRGf9butzNWL-_f3T6WDvPVs7QiYmZTdGTngUFAknLGRH6zxshLqh2mK8_jyf_yp2GIEXNHaT.jpg?size=1600x1200&quality=96&type=album" data-fancybox="handling_gallery" data-caption="Хендлинг зал">
-                        <img src="https://sun1-57.userapi.com/s/v1/ig2/tOIqU6d6lLMXUD_dRGf9butzNWL-_f3T6WDvPVs7QiYmZTdGTngUFAknLGRH6zxshLqh2mK8_jyf_yp2GIEXNHaT.jpg?size=1600x1200&quality=96&type=album" alt="" class="handling_gallery_image">
+                        <img data-src="https://sun1-57.userapi.com/s/v1/ig2/tOIqU6d6lLMXUD_dRGf9butzNWL-_f3T6WDvPVs7QiYmZTdGTngUFAknLGRH6zxshLqh2mK8_jyf_yp2GIEXNHaT.jpg?size=1600x1200&quality=96&type=album" alt="" class="handling_gallery_image">
                     </a>
                 </div>
             </div>
             <div class="page_text_block">
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Размер хендлинг зала 100 кв.м.</h4>
-                <h4 class="page_text_block_content"><img src="/assets/dog.png" alt="" class="text_prefix"> Заниматься можно, как с хендлером, так и самостоятельно.</h4>
-                <h4 class="page_text_block_content"><img src="/assets/note.png" alt="" class="text_prefix"> Запись на занятия по</h4>
-                <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> 8-905-002-00-72 (WhatsApp)</h4>
-                <h4 class="page_text_block_content"><img src="/assets/geopin.png" alt="" class="text_prefix"> Адрес : ул. Строителей, д. 89"А",второй этаж</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Размер хендлинг зала 100 кв.м.</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/dog.png" alt="" class="text_prefix"> Заниматься можно, как с хендлером, так и самостоятельно.</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/note.png" alt="" class="text_prefix"> Запись на занятия по</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/phone.png" alt="" class="text_prefix"> 8-905-002-00-72 (WhatsApp)</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/geopin.png" alt="" class="text_prefix"> Адрес : ул. Строителей, д. 89"А",второй этаж</h4>
             </div>
             <div class="page_text_block">
                 <h2 class="page_title" style="color: rgb(0,255,0);">ПРАВИЛА ПОСЕЩЕНИЯ ХЕНДЛИНГ ЗАЛА:</h2>
@@ -318,38 +1327,38 @@
         </div>
         <div class="page hidden" id="page_8">
             <div class="page_text_block">
-                <h2 class="page_title"><img src="/assets/fire.png" alt="" class="text_prefix">Привилегии для членов клуба:</h2>
-                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Спец. цены на обмен документов в РКФ</h4>
-                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Оптовые цены на корма, ветеринарные препараты, аммуницию и аксессуары</h4>
-                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Спец. цены на занятия в хендлинг зале</h4>
-                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> БЕСПЛАТНЫЕ консультации</h4>
-                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Коллективная регистрация на выставки</h4>
-                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> БЕСПЛАТНАЯ реклама клубных собак и их пометов</h4>
-                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Участие в клубных закрытых мероприятиях</h4>
-                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Скидка 5% в груминг салоне "Велес"</h4>
-                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Скидка 5% в магазине автоаксессуаров "Автоледи"</h4>
-                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Скидка 20% в суши баре "Филадельфия"</h4>
-                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Автосервис "ИльсурАвто" - диагностика бесплатно, на ремонт 10% скидка</h4>
-                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Оптовые цены на снаряжение "Нон-стоп"</h4>
-                <h4 class="page_text_block_content"><img src="/assets/stars.png" alt="" class="text_prefix"> Оптовые цены на зоотовары " Osso"</h4>
+                <h2 class="page_title"><img data-src="/assets/fire.png" alt="" class="text_prefix">Привилегии для членов клуба:</h2>
+                <h4 class="page_text_block_content"><img data-src="/assets/stars.png" alt="" class="text_prefix"> Спец. цены на обмен документов в РКФ</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/stars.png" alt="" class="text_prefix"> Оптовые цены на корма, ветеринарные препараты, аммуницию и аксессуары</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/stars.png" alt="" class="text_prefix"> Спец. цены на занятия в хендлинг зале</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/stars.png" alt="" class="text_prefix"> БЕСПЛАТНЫЕ консультации</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/stars.png" alt="" class="text_prefix"> Коллективная регистрация на выставки</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/stars.png" alt="" class="text_prefix"> БЕСПЛАТНАЯ реклама клубных собак и их пометов</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/stars.png" alt="" class="text_prefix"> Участие в клубных закрытых мероприятиях</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/stars.png" alt="" class="text_prefix"> Скидка 5% в груминг салоне "Велес"</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/stars.png" alt="" class="text_prefix"> Скидка 5% в магазине автоаксессуаров "Автоледи"</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/stars.png" alt="" class="text_prefix"> Скидка 20% в суши баре "Филадельфия"</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/stars.png" alt="" class="text_prefix"> Автосервис "ИльсурАвто" - диагностика бесплатно, на ремонт 10% скидка</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/stars.png" alt="" class="text_prefix"> Оптовые цены на снаряжение "Нон-стоп"</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/stars.png" alt="" class="text_prefix"> Оптовые цены на зоотовары " Osso"</h4>
             </div>
         </div>
         <div class="page hidden" id="page_9">
             <div class="page_text_block">
                 <h2 class="page_title">Наши партнёры</h2>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix">ACARI CIAR. АКАРИ КИАР-НЕФТЕКАМСК</h4>
-                <h4 class="page_text_block_content"><img src="/assets/vk.png" alt="" class="text_prefix"><a href="https://vk.com/acariciar_nft" class="text_link" target="_blank">https://vk.com/acariciar_nft</a></h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix">ACARI CIAR. АКАРИ КИАР-НЕФТЕКАМСК</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/vk.png" alt="" class="text_prefix"><a href="https://vk.com/acariciar_nft" class="text_link" target="_blank">https://vk.com/acariciar_nft</a></h4>
                 <h4 class="page_text_block_content"> 
                 <a class="image_container" href="https://sun9-4.userapi.com/s/v1/ig2/rn6oYh26nmONe4bzftDseCM8PMnEsDrT_FOlJPFGRFpA_EqhFywm-fxdR0EWVVsqmERI2zoM0xPxeTgW9D4Eacsg.jpg?size=850x849&quality=95&type=album" data-fancybox="partners" data-caption="ACARI CIAR. АКАРИ КИАР-НЕФТЕКАМСК">
-                    <img src="https://sun9-4.userapi.com/s/v1/ig2/rn6oYh26nmONe4bzftDseCM8PMnEsDrT_FOlJPFGRFpA_EqhFywm-fxdR0EWVVsqmERI2zoM0xPxeTgW9D4Eacsg.jpg?size=850x849&quality=95&type=album" alt="" class="veterinar_image">
+                    <img data-src="https://sun9-4.userapi.com/s/v1/ig2/rn6oYh26nmONe4bzftDseCM8PMnEsDrT_FOlJPFGRFpA_EqhFywm-fxdR0EWVVsqmERI2zoM0xPxeTgW9D4Eacsg.jpg?size=850x849&quality=95&type=album" alt="" class="veterinar_image">
                 </a></h4>
             </div>
             <div class="page_text_block">
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix">Автоледи Нефтекамск</h4>
-                <h4 class="page_text_block_content"><img src="/assets/vk.png" alt="" class="text_prefix"><a href="https://vk.com/autolady_nft" class="text_link" target="_blank">https://vk.com/autolady_nft</a></h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix">Автоледи Нефтекамск</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/vk.png" alt="" class="text_prefix"><a href="https://vk.com/autolady_nft" class="text_link" target="_blank">https://vk.com/autolady_nft</a></h4>
                 <h4 class="page_text_block_content"> 
                 <a class="image_container" href="https://sun9-39.userapi.com/s/v1/if1/BJx3k_H0TVbTa77grpAH_6N_NIpjVvQh3jcqhT8kNGxQh7haj4foFW9ROzP1LMhgJQqaYIuR.jpg?size=1335x1002&quality=96&type=album" data-fancybox="partners" data-caption="Автоледи Нефтекамск">
-                    <img src="https://sun9-39.userapi.com/s/v1/if1/BJx3k_H0TVbTa77grpAH_6N_NIpjVvQh3jcqhT8kNGxQh7haj4foFW9ROzP1LMhgJQqaYIuR.jpg?size=1335x1002&quality=96&type=album" alt="" class="veterinar_image">
+                    <img data-src="https://sun9-39.userapi.com/s/v1/if1/BJx3k_H0TVbTa77grpAH_6N_NIpjVvQh3jcqhT8kNGxQh7haj4foFW9ROzP1LMhgJQqaYIuR.jpg?size=1335x1002&quality=96&type=album" alt="" class="veterinar_image">
                 </a></h4>
             </div>
         </div>
@@ -387,7 +1396,7 @@
                     </p>
             </div>
             <div class="page_text_block">
-                <h2 class="page_title"><img src="/assets/dog.png" alt="" class="text_prefix">На курсе отрабатываются навыки:</h2>
+                <h2 class="page_title"><img data-src="/assets/dog.png" alt="" class="text_prefix">На курсе отрабатываются навыки:</h2>
                 <h4 class="page_text_block_content">- Приучения собаки к шлейке, ошейнику, поводку и наморднику.</h4>
                 <h4 class="page_text_block_content">- Команда «Гуляй»</h4>
                 <h4 class="page_text_block_content">- Движение собаки рядом с хозяином команда «Рядом»</h4>
@@ -403,17 +1412,17 @@
                 <h4 class="page_text_block_content">- Обучение не реагировать на резкие звуки (выстрел) и посторонние раздражители — чужие люди и собаки</h4>
             </div>
             <div class="page_text_block">
-                <h2 class="page_title"><img src="/assets/pin.png" alt="" class="text_prefix">Что необходимо для занятий по послушанию (амуниция)?</h2>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Мягкий, удобный ошейник, подходящий вашей собаке по размеру;</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> 1.5-2 м поводок с шириной стропы около 2 см. (Рулетки, металлические, тонкие шнуровые поводки для занятий не подходят)</p>;</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Лакомство. Не повседневный корм, а что-то вкусное и любимое вашей собакой. Идеально подойдут слегка приваренные сердечки, желудочки, лёгкое и т. п., нарезанное на небольшие кусочки. Размер их должен быть таков, чтобы собака не тратила время на их жевание, но и не теряла мотивации из-за слишком незначительного размера.</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Сумочка для лакомства (желательна, но не обязательна — позволяет освободить руки от пакета, а карманы — от непривычных запахов и пятен)</p>;</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Коврик для отработки навыка «Место»;</h4>
+                <h2 class="page_title"><img data-src="/assets/pin.png" alt="" class="text_prefix">Что необходимо для занятий по послушанию (амуниция)?</h2>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Мягкий, удобный ошейник, подходящий вашей собаке по размеру;</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> 1.5-2 м поводок с шириной стропы около 2 см. (Рулетки, металлические, тонкие шнуровые поводки для занятий не подходят)</p>;</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Лакомство. Не повседневный корм, а что-то вкусное и любимое вашей собакой. Идеально подойдут слегка приваренные сердечки, желудочки, лёгкое и т. п., нарезанное на небольшие кусочки. Размер их должен быть таков, чтобы собака не тратила время на их жевание, но и не теряла мотивации из-за слишком незначительного размера.</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Сумочка для лакомства (желательна, но не обязательна — позволяет освободить руки от пакета, а карманы — от непривычных запахов и пятен)</p>;</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Коврик для отработки навыка «Место»;</h4>
             </div>
             <div class="page_text_block">
                 <h2 class="page_title">Записаться на курс:</h2>
-                <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> +7-905-002-0072 (WhatsApp)</h4>
-                <h4 class="page_text_block_content"><img src="/assets/exclamation.png" alt="" class="text_prefix"> Курс рассчитан на 10 занятий.</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/phone.png" alt="" class="text_prefix"> +7-905-002-0072 (WhatsApp)</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/exclamation.png" alt="" class="text_prefix"> Курс рассчитан на 10 занятий.</h4>
             </div>
             <h2 class="page_title">Отзывы к курсу</h2>
             <div class="powr-comments" id="a82bd159_1568908364"></div>
@@ -424,9 +1433,9 @@
             <p>Социализация призвана помочь вашей собаке успешно интегрироваться не только в человеческое общество, но и в общество окружающих ее животных.</p>
             </div>
             <div class="page_text_block">
-                <h2 class="page_title"><img src="/assets/exclamation.png" alt="" class="text_prefix"> Проблемы несоциализированных щенков:</h2>
-                <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Собаки, которых в молодости должным образом не социализировали, зачастую вырастают в трусливых, не уверенных в себе собак, которые не знают, как себя вести в самых простых ситуациях. В результате, находясь в постоянном стрессе, собака постепенно становится агрессивной, поскольку это естественная защитная реакция животного на непонятные ему события.</h4>
-                <h4 class="page_text_block_content"><img src="/assets/pin.png" alt="" class="text_prefix"> Другие несоциализированные щенки могут вырасти в гиперактивных, беспокойных собак, которые вследствие своей неуравновешенности будут иметь большие поведенческие проблемы. Такие собаки всегда будут представлять потенциальную опасность не только для других животных, но и для хозяев.</h4>
+                <h2 class="page_title"><img data-src="/assets/exclamation.png" alt="" class="text_prefix"> Проблемы несоциализированных щенков:</h2>
+                <h4 class="page_text_block_content"><img data-src="/assets/pin.png" alt="" class="text_prefix"> Собаки, которых в молодости должным образом не социализировали, зачастую вырастают в трусливых, не уверенных в себе собак, которые не знают, как себя вести в самых простых ситуациях. В результате, находясь в постоянном стрессе, собака постепенно становится агрессивной, поскольку это естественная защитная реакция животного на непонятные ему события.</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/pin.png" alt="" class="text_prefix"> Другие несоциализированные щенки могут вырасти в гиперактивных, беспокойных собак, которые вследствие своей неуравновешенности будут иметь большие поведенческие проблемы. Такие собаки всегда будут представлять потенциальную опасность не только для других животных, но и для хозяев.</h4>
             </div>
             <div class="page_text_block">
                 <h2 class="page_title">Для чего нужна социализация щенка?</h2>
@@ -434,8 +1443,8 @@
             </div>
             <div class="page_text_block">
                 <h2 class="page_title">Записаться на курс:</h2>
-                <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> +7-905-002-00-72 (WhatsApp)</h4>
-                <h4 class="page_text_block_content"><img src="/assets/exclamation.png" alt="" class="text_prefix"> Курс рассчитан на 4 занятия.</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/phone.png" alt="" class="text_prefix"> +7-905-002-00-72 (WhatsApp)</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/exclamation.png" alt="" class="text_prefix"> Курс рассчитан на 4 занятия.</h4>
             </div>
             <h2 class="page_title">Отзывы к курсу</h2>
             <div class="powr-comments" id="fe9ab47e_1565624666"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
@@ -446,36 +1455,36 @@
                 <p>Курс послушания необходим хозяевам тех питомцев, которые хотят иметь хороший контакт со своей собакой, уметь управлять ею и получать удовольствие от совместных прогулок.</p>
             </div>
             <div class="page_text_block">
-                <h2 class="page_title"><img src="/assets/note.png" alt="" class="text_prefix"> В курс общего послушания входят такие первоначальные навыки, как:</h2>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Контакт с хозяином</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Показ прикуса</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Адекватное отношение к наморднику.</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Команда "сидеть"</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Команда "стоять"</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Команда "лежать"</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Отказ от корма из чужих рук и по команде "нельзя"</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Прекращение нежелательных действий по команде "Фу"</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Выдержка</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Выдержка на расстоянии</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Переход в свободное состояние</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Подход с обходом команда "ко мне"</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Прохождение препятствий</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Хождение "рядом"</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Посыл собаки на место-команда "место"</h4>
+                <h2 class="page_title"><img data-src="/assets/note.png" alt="" class="text_prefix"> В курс общего послушания входят такие первоначальные навыки, как:</h2>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Контакт с хозяином</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Показ прикуса</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Адекватное отношение к наморднику.</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Команда "сидеть"</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Команда "стоять"</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Команда "лежать"</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Отказ от корма из чужих рук и по команде "нельзя"</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Прекращение нежелательных действий по команде "Фу"</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Выдержка</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Выдержка на расстоянии</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Переход в свободное состояние</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Подход с обходом команда "ко мне"</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Прохождение препятствий</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Хождение "рядом"</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Посыл собаки на место-команда "место"</h4>
             </div>
             <div class="page_text_block">
-                <h2 class="page_title"><img src="/assets/pin.png" alt="" class="text_prefix"> Что необходимо для занятий по послушанию (амуниция)?</h2>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Мягкий, удобный ошейник, подходящий вашей собаке по размеру;</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> 1.5-2 м поводок с шириной стропы около 2 см. (Рулетки, металлические, тонкие шнуровые поводки для занятий не подходят);</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Намордник для отработки навыка;</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Лакомство. Не повседневный корм, а что-то вкусное и любимое вашей собакой. Идеально подойдут слегка приваренные сердечки, желудочки, лёгкое и т. п., нарезанное на небольшие кусочки. Размер их должен быть таков, чтобы собака не тратила время на их жевание, но и не теряла мотивации из-за слишком незначительного размера.</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Сумочка для лакомства (желательна, но не обязательна — позволяет освободить руки от пакета, а карманы — от непривычных запахов и пятен);</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Коврик для отработки навыка «Место»;</h4>
+                <h2 class="page_title"><img data-src="/assets/pin.png" alt="" class="text_prefix"> Что необходимо для занятий по послушанию (амуниция)?</h2>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Мягкий, удобный ошейник, подходящий вашей собаке по размеру;</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> 1.5-2 м поводок с шириной стропы около 2 см. (Рулетки, металлические, тонкие шнуровые поводки для занятий не подходят);</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Намордник для отработки навыка;</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Лакомство. Не повседневный корм, а что-то вкусное и любимое вашей собакой. Идеально подойдут слегка приваренные сердечки, желудочки, лёгкое и т. п., нарезанное на небольшие кусочки. Размер их должен быть таков, чтобы собака не тратила время на их жевание, но и не теряла мотивации из-за слишком незначительного размера.</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Сумочка для лакомства (желательна, но не обязательна — позволяет освободить руки от пакета, а карманы — от непривычных запахов и пятен);</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Коврик для отработки навыка «Место»;</h4>
             </div>
             <div class="page_text_block">
                 <h2 class="page_title">Записаться на курс:</h2>
-                <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> +7-905-002-0072 (WhatsApp)</h4>
-                <h4 class="page_text_block_content"><img src="/assets/exclamation.png" alt="" class="text_prefix"> Курс рассчитан на 10 занятий.</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/phone.png" alt="" class="text_prefix"> +7-905-002-0072 (WhatsApp)</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/exclamation.png" alt="" class="text_prefix"> Курс рассчитан на 10 занятий.</h4>
             </div>
             <h2 class="page_title">Отзывы к курсу</h2>
             <div class="powr-comments" id="8d5a6818_1565622936"></div>
@@ -486,17 +1495,17 @@
                <p>Продвинутый курс послушания - это следующая ступень образования собак в нашем кинологическом клубе. Здесь начинается четкая работа по отработке навыков. В процессе этого курса идет уже не изучение, а доработка, отшлифовка тех команд, которые собака уже знает. Работа на расстояние, выдержка, работа без поводка.</p> 
             </div>
             <div class="page_text_block">
-                <h2 class="page_title"><img src="/assets/pin.png" alt="" class="text_prefix"> Что необходимо для занятий по послушанию (амуниция)?</h2>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Мягкий, удобный ошейник, подходящий вашей собаке по размеру;</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix">  3 м поводок с шириной стропы около 2 см. (Рулетки, металлические, тонкие шнуровые поводки для занятий не подходят);</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Лакомство. Не повседневный корм, а что-то вкусное и любимое вашей собакой. Идеально подойдут слегка приваренные сердечки, желудочки, лёгкое и т. п., нарезанное на небольшие кусочки. Размер их должен быть таков, чтобы собака не тратила время на их жевание, но и не теряла мотивации из-за слишком незначительного размера.</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Сумочка для лакомства (желательна, но не обязательна — позволяет освободить руки от пакета, а карманы — от непривычных запахов и пятен)</p>;</h4>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Коврик для отработки навыка «Место»;</h4>
+                <h2 class="page_title"><img data-src="/assets/pin.png" alt="" class="text_prefix"> Что необходимо для занятий по послушанию (амуниция)?</h2>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Мягкий, удобный ошейник, подходящий вашей собаке по размеру;</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix">  3 м поводок с шириной стропы около 2 см. (Рулетки, металлические, тонкие шнуровые поводки для занятий не подходят);</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Лакомство. Не повседневный корм, а что-то вкусное и любимое вашей собакой. Идеально подойдут слегка приваренные сердечки, желудочки, лёгкое и т. п., нарезанное на небольшие кусочки. Размер их должен быть таков, чтобы собака не тратила время на их жевание, но и не теряла мотивации из-за слишком незначительного размера.</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Сумочка для лакомства (желательна, но не обязательна — позволяет освободить руки от пакета, а карманы — от непривычных запахов и пятен)</p>;</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Коврик для отработки навыка «Место»;</h4>
             </div>
             <div class="page_text_block">
                 <h2 class="page_title">Записаться на курс:</h2>
-                <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> +7-905-002-0072 (WhatsApp)</p></h4>
-                <h4 class="page_text_block_content"><img src="/assets/exclamation.png" alt="" class="text_prefix"> Курс рассчитан на 10 занятий.</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/phone.png" alt="" class="text_prefix"> +7-905-002-0072 (WhatsApp)</p></h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/exclamation.png" alt="" class="text_prefix"> Курс рассчитан на 10 занятий.</h4>
             </div>
             <h2 class="page_title">Отзывы к курсу</h2>
             <div class="powr-comments" id="6b36ebeb_1565623715"></div>
@@ -504,52 +1513,52 @@
         <div class="page hidden" id="useful_page_1">
             <div class="page_text_block">
                 <h2 class="page_title">Ветеринарные службы города</h2>
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> РБ ГБУ Нефтекамская межрайонная ветеринарная станция</h4>
-                <h4 class="page_text_block_content"><img src="/assets/note.png" alt="" class="text_prefix"> 452683, Республика Башкортостан, г. Нефтекамск, ул. Магистральная, д. 7</h4>
-                <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> 8(3473)2-15-73</h4>
-                <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> 8(3473)4-33-11</h4>
-                <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> 8(3473)2-26-61</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> РБ ГБУ Нефтекамская межрайонная ветеринарная станция</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/note.png" alt="" class="text_prefix"> 452683, Республика Башкортостан, г. Нефтекамск, ул. Магистральная, д. 7</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/phone.png" alt="" class="text_prefix"> 8(3473)2-15-73</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/phone.png" alt="" class="text_prefix"> 8(3473)4-33-11</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/phone.png" alt="" class="text_prefix"> 8(3473)2-26-61</h4>
                 <h4 class="page_text_block_content">E-mail: neftveterinar@mail.ru</h4>
                 <h4 class="page_text_block_content"> 
                 <a class="image_container" href="https://pp.userapi.com/c841331/v841331993/6577e/FMltOWyvY1g.jpg" data-fancybox="veterinar_gallery" data-caption="РБ ГБУ Нефтекамская межрайонная ветеринарная станция">
-                    <img src="https://pp.userapi.com/c841331/v841331993/6577e/FMltOWyvY1g.jpg" alt="" class="veterinar_image">
+                    <img data-src="https://pp.userapi.com/c841331/v841331993/6577e/FMltOWyvY1g.jpg" alt="" class="veterinar_image">
                 </a></h4>
             </div>
             <div class="page_text_block">
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Ветеринарная клиника "Доктор Айболит"</h4>
-                <h4 class="page_text_block_content"><img src="/assets/note.png" alt="" class="text_prefix"> г. Нефтекамск, ул. Нефтяников, 7, корп. б (второй этаж, вход со двора)</h4>
-                <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> (34783) 2-28-56</h4>
-                <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> 8-917-44-5-666-8</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Ветеринарная клиника "Доктор Айболит"</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/note.png" alt="" class="text_prefix"> г. Нефтекамск, ул. Нефтяников, 7, корп. б (второй этаж, вход со двора)</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/phone.png" alt="" class="text_prefix"> (34783) 2-28-56</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/phone.png" alt="" class="text_prefix"> 8-917-44-5-666-8</h4>
                 <h4 class="page_text_block_content">E-mail: vetdoctor_neft@mail.ru</h4>
-                <h4 class="page_text_block_content"><img src="/assets/vk.png" alt="" class="text_prefix"><a href="https://vk.com/club19315842" class="text_link" target="_blank"> https://vk.com/club19315842 </a></h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/vk.png" alt="" class="text_prefix"><a href="https://vk.com/club19315842" class="text_link" target="_blank"> https://vk.com/club19315842 </a></h4>
                 <h4 class="page_text_block_content">Сайт&nbsp;<a href="http://aybolit.my1.ru/index/o_nas/0-8" class="text_link" target="_blank"> http://aybolit.my1.ru/index/o_nas/0-8 </a></h4>
                 <h4 class="page_text_block_content">  <a class="image_container" href="https://pp.userapi.com/c830109/v830109513/5bfab/FdKWf5W3MhQ.jpg" data-fancybox="veterinar_gallery" data-caption='Ветеринарная клиника "Доктор Айболит"'>
-                    <img src="https://pp.userapi.com/c830109/v830109513/5bfab/FdKWf5W3MhQ.jpg" alt="" class="veterinar_image">
+                    <img data-src="https://pp.userapi.com/c830109/v830109513/5bfab/FdKWf5W3MhQ.jpg" alt="" class="veterinar_image">
                 </a>
                 </h4>
             </div>
             <div class="page_text_block">
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Ветеринарный лечебно-профилактический центр</h4>
-                <h4 class="page_text_block_content"><img src="/assets/note.png" alt="" class="text_prefix"> Республика Башкортостан, Нефтекамск г., ул. Карла Маркса, 2</h4>
-                <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> 8(34783) 6-03-33</h4>
-                <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> +7-917-388-58-99 (Только экстренные звонки)</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Ветеринарный лечебно-профилактический центр</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/note.png" alt="" class="text_prefix"> Республика Башкортостан, Нефтекамск г., ул. Карла Маркса, 2</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/phone.png" alt="" class="text_prefix"> 8(34783) 6-03-33</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/phone.png" alt="" class="text_prefix"> +7-917-388-58-99 (Только экстренные звонки)</h4>
                 <h4 class="page_text_block_content">
                     <a class="image_container" href="https://pp.userapi.com/c830109/v830109513/5bfb4/zAWegyJ5ws8.jpg" data-fancybox="veterinar_gallery" data-caption='Ветеринарный лечебно-профилактический центр'>
-                        <img src="https://pp.userapi.com/c830109/v830109513/5bfb4/zAWegyJ5ws8.jpg" alt="" class="veterinar_image">
+                        <img data-src="https://pp.userapi.com/c830109/v830109513/5bfb4/zAWegyJ5ws8.jpg" alt="" class="veterinar_image">
                     </a>
                 </h4>
             </div>
             <div class="page_text_block">
-                <h4 class="page_text_block_content"><img src="/assets/paws.png" alt="" class="text_prefix"> Ветеринарный центр "Здоровый питомец"</h4>
-                <h4 class="page_text_block_content"><img src="/assets/note.png" alt="" class="text_prefix"> Республика Башкортостан, Нефтекамск г., улица Парковая 8</h4>
-                <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> +7-917-793-90-19</h4>
-                <h4 class="page_text_block_content"><img src="/assets/phone.png" alt="" class="text_prefix"> +7-937-352-62-80</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/paws.png" alt="" class="text_prefix"> Ветеринарный центр "Здоровый питомец"</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/note.png" alt="" class="text_prefix"> Республика Башкортостан, Нефтекамск г., улица Парковая 8</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/phone.png" alt="" class="text_prefix"> +7-917-793-90-19</h4>
+                <h4 class="page_text_block_content"><img data-src="/assets/phone.png" alt="" class="text_prefix"> +7-937-352-62-80</h4>
                 <h4 class="page_text_block_content">E-mail: yusupov.mars1974@mail.ru</h4>
-                <h4 class="page_text_block_content">Группа <img src="/assets/vk.png" alt="" class="text_prefix">&nbsp;<a href="https://vk.com/veterinarniycentr" class="text_link" target="_blank"> https://vk.com/veterinarniycentr </a></h4>
-                <h4 class="page_text_block_content">Страница <img src="/assets/vk.png" alt="" class="text_prefix">&nbsp;<a href="https://vk.com/id321896051" class="text_link" target="_blank"> https://vk.com/id321896051 </a></h4>
+                <h4 class="page_text_block_content">Группа <img data-src="/assets/vk.png" alt="" class="text_prefix">&nbsp;<a href="https://vk.com/veterinarniycentr" class="text_link" target="_blank"> https://vk.com/veterinarniycentr </a></h4>
+                <h4 class="page_text_block_content">Страница <img data-src="/assets/vk.png" alt="" class="text_prefix">&nbsp;<a href="https://vk.com/id321896051" class="text_link" target="_blank"> https://vk.com/id321896051 </a></h4>
                 <h4 class="page_text_block_content">
                     <a class="image_container" href="https://sun9-78.userapi.com/s/v1/if1/UTGkOPVkBCQbu6Xt4l2RVv8HlsPsC6O2sCsOvczXdFQT0onTTuI9MMMHviMLFV4-feVkeA0t.jpg?size=2560x1920&quality=96&type=album" data-fancybox="veterinar_gallery" data-caption='Ветеринарный центр "Здоровый питомец"'>
-                    <img src="https://sun9-78.userapi.com/s/v1/if1/UTGkOPVkBCQbu6Xt4l2RVv8HlsPsC6O2sCsOvczXdFQT0onTTuI9MMMHviMLFV4-feVkeA0t.jpg?size=2560x1920&quality=96&type=album" alt="" class="veterinar_image">
+                    <img data-src="https://sun9-78.userapi.com/s/v1/if1/UTGkOPVkBCQbu6Xt4l2RVv8HlsPsC6O2sCsOvczXdFQT0onTTuI9MMMHviMLFV4-feVkeA0t.jpg?size=2560x1920&quality=96&type=album" alt="" class="veterinar_image">
                     </a>
                 </h4>
             </div>
@@ -563,38 +1572,38 @@
         </div>
         <div class="page hidden" id="useful_page_4">
             <h2 class="page_title">Породы собак</h2>
-            <iframe src="https://lapkins.ru/dog/" width="100%" height="1080"></iframe>
+            <iframe data-src="https://lapkins.ru/dog/" width="100%" height="1080"></iframe>
         </div>
         <div class="page hidden" id="useful_page_5">
             <div class="page_text_block">
                 <h2 class="page_title">Галерея</h2>
                 <div class="handling_gallery">
                     <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="site_gallery" data-caption="Хендлинг зал">
-                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                        <img data-src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
                     </a>
                     <a class="handling_gallery_image_container" href="https://sun9-70.userapi.com/s/v1/ig2/ZjZXnwjtAmlTI7pX6jdVcMy4zz3N7pE1ECI9gpKiO8_FRvgfPuxBpnpZowogiWZCq1dQJ49FhuOAdrZNZr-7Y4T5.jpg?size=1200x1600&quality=96&type=album" data-fancybox="site_gallery" data-caption="Хендлинг зал">
-                        <img src="https://sun9-70.userapi.com/s/v1/ig2/ZjZXnwjtAmlTI7pX6jdVcMy4zz3N7pE1ECI9gpKiO8_FRvgfPuxBpnpZowogiWZCq1dQJ49FhuOAdrZNZr-7Y4T5.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                        <img data-src="https://sun9-70.userapi.com/s/v1/ig2/ZjZXnwjtAmlTI7pX6jdVcMy4zz3N7pE1ECI9gpKiO8_FRvgfPuxBpnpZowogiWZCq1dQJ49FhuOAdrZNZr-7Y4T5.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
                     </a>
                     <a class="handling_gallery_image_container"  href="https://sun9-47.userapi.com/s/v1/ig2/mB-6pCL9StJzRUn-Z6T5aBxgIo1LS8AkhyKImJh1JTspdbDqFkcZD_kapaT2a54GRbZ8sHPf6PSjmNpFUeneEInG.jpg?size=1200x1600&quality=96&type=album" data-fancybox="site_gallery" data-caption="Хендлинг зал">
-                        <img src="https://sun9-47.userapi.com/s/v1/ig2/mB-6pCL9StJzRUn-Z6T5aBxgIo1LS8AkhyKImJh1JTspdbDqFkcZD_kapaT2a54GRbZ8sHPf6PSjmNpFUeneEInG.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                        <img data-src="https://sun9-47.userapi.com/s/v1/ig2/mB-6pCL9StJzRUn-Z6T5aBxgIo1LS8AkhyKImJh1JTspdbDqFkcZD_kapaT2a54GRbZ8sHPf6PSjmNpFUeneEInG.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
                     </a>
                     <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="site_gallery" data-caption="Хендлинг зал">
-                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                        <img data-src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
                     </a>
                     <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="site_gallery" data-caption="Хендлинг зал">
-                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                        <img data-src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
                     </a>
                     <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="site_gallery" data-caption="Хендлинг зал">
-                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                        <img data-src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
                     </a>
                     <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="site_gallery" data-caption="Хендлинг зал">
-                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                        <img data-src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
                     </a>
                     <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="site_gallery" data-caption="Хендлинг зал">
-                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                        <img data-src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
                     </a>
                     <a class="handling_gallery_image_container" href="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" data-fancybox="site_gallery" data-caption="Хендлинг зал">
-                        <img src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
+                        <img data-src="https://sun9-71.userapi.com/s/v1/ig2/ZBxEoOCTdrtbJ3Qe_giFQcqj8zaTmkjBuMAW8VfljU4ylnGUIK-thAMEo3hoglTqqTotVVpKn_iUlaUpaYb0-H3h.jpg?size=1200x1600&quality=96&type=album" alt="" class="handling_gallery_image">
                     </a>
 
                 </div>
@@ -605,15 +1614,2328 @@
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    <script src="/script/pages.js"></script>
-    <script src="/script/theme.js"></script>
-    <script src="/script/sidebar.js"></script>
-    <script src="/script/vision.js"></script>
+    <script>
+        var button = document.getElementById("theme_changer")
+var button2 = document.getElementById("theme_changer_2")
+var button3 = document.getElementById("mobile_theme_changer")
+var button4 = document.getElementById("mobile_theme_changer_2")
+var target = document.getElementById("body")
+var non = document.getElementById("theme_changer_image")
+var yes = document.getElementById("theme_changer_image_2")
+var fci_1 = document.getElementById("FCI_1")
+var fci_2 = document.getElementById("FCI_2")
+var rfss_1 = document.getElementById("RFSS_1")
+var rfss_2 = document.getElementById("RFSS_2")
+var rkf_1 = document.getElementById("RKF_1")
+var rkf_2 = document.getElementById("RKF_2")
+var kls_1 = document.getElementById("KLS_1")
+var kls_2 = document.getElementById("KLS_2")
+checkCookie("theme")
+
+function checkCookie (name) {
+    if (getCookie(name) == "dark") {
+        target.classList.add("dark")
+        button.classList.add("hidden_display")
+        button2.classList.remove("hidden_display")
+        button3.classList.add("hidden_display")
+        button4.classList.remove("hidden_display")
+        non.classList.add("hidden_display")
+        yes.classList.remove("hidden_display")
+        fci_1.classList.add("hidden_display")
+        fci_2.classList.remove("hidden_display")
+        rfss_1.classList.add("hidden_display")
+        rfss_2.classList.remove("hidden_display")
+        rkf_1.classList.add("hidden_display")
+        rkf_2.classList.remove("hidden_display")
+        kls_1.classList.add("hidden_display")
+        kls_2.classList.remove("hidden_display")
+    } else {
+        target.classList.remove("dark")
+        button.classList.remove("hidden_display")
+        button2.classList.add("hidden_display")
+        button3.classList.remove("hidden_display")
+        button4.classList.add("hidden_display")
+        non.classList.remove("hidden_display")
+        yes.classList.add("hidden_display")
+        fci_1.classList.remove("hidden_display")
+        fci_2.classList.add("hidden_display")
+        rfss_1.classList.remove("hidden_display")
+        rfss_2.classList.add("hidden_display")
+        rkf_1.classList.remove("hidden_display")
+        rkf_2.classList.add("hidden_display")
+        kls_1.classList.remove("hidden_display")
+        kls_2.classList.add("hidden_display")
+    } 
+}
+
+function setCookie(name, value, options = {}) {
+
+    options = {
+      path: '/',
+      // при необходимости добавьте другие значения по умолчанию
+      ...options
+    };
+  
+    if (options.expires instanceof Date) {
+      options.expires = options.expires.toUTCString();
+    }
+  
+    let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+  
+    for (let optionKey in options) {
+      updatedCookie += "; " + optionKey;
+      let optionValue = options[optionKey];
+      if (optionValue !== true) {
+        updatedCookie += "=" + optionValue;
+      }
+    }
+  
+    document.cookie = updatedCookie;
+  }
+
+function getCookie(name) {
+    let matches = document.cookie.match(new RegExp(
+      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+  }
+
+  function deleteCookie(name) {
+    setCookie(name, "", {
+      'max-age': -1
+    })
+  }
+
+button.addEventListener("click", function(){
+    target.classList.add("dark")
+    button.classList.add("hidden_display")
+    button2.classList.remove("hidden_display")
+    button3.classList.add("hidden_display")
+    button4.classList.remove("hidden_display")
+    non.classList.add("hidden_display")
+    yes.classList.remove("hidden_display")
+    fci_1.classList.add("hidden_display")
+    fci_2.classList.remove("hidden_display")
+    rfss_1.classList.add("hidden_display")
+    rfss_2.classList.remove("hidden_display")
+    rkf_1.classList.add("hidden_display")
+    rkf_2.classList.remove("hidden_display")
+    kls_1.classList.add("hidden_display")
+    kls_2.classList.remove("hidden_display")
+    setCookie("theme","dark",{'max-age': 363300})
+})
+
+button2.addEventListener("click", function(){
+    target.classList.remove("dark")
+    button.classList.remove("hidden_display")
+    button2.classList.add("hidden_display")
+    button3.classList.remove("hidden_display")
+    button4.classList.add("hidden_display")
+    non.classList.remove("hidden_display")
+    yes.classList.add("hidden_display")
+    fci_1.classList.remove("hidden_display")
+    fci_2.classList.add("hidden_display")
+    rfss_1.classList.remove("hidden_display")
+    rfss_2.classList.add("hidden_display")
+    rkf_1.classList.remove("hidden_display")
+    rkf_2.classList.add("hidden_display")
+    kls_1.classList.remove("hidden_display")
+    kls_2.classList.add("hidden_display")
+    setCookie("theme","light",{'max-age': 363300})
+})
+
+button3.addEventListener("click", function(){
+  target.classList.add("dark")
+  button.classList.add("hidden_display")
+  button2.classList.remove("hidden_display")
+  button3.classList.add("hidden_display")
+  button4.classList.remove("hidden_display")
+  non.classList.add("hidden_display")
+  yes.classList.remove("hidden_display")
+  fci_1.classList.add("hidden_display")
+  fci_2.classList.remove("hidden_display")
+  rfss_1.classList.add("hidden_display")
+  rfss_2.classList.remove("hidden_display")
+  rkf_1.classList.add("hidden_display")
+  rkf_2.classList.remove("hidden_display")
+  kls_1.classList.add("hidden_display")
+  kls_2.classList.remove("hidden_display")
+  setCookie("theme","dark",{'max-age': 363300})
+})
+
+button4.addEventListener("click", function(){
+  target.classList.remove("dark")
+  button.classList.remove("hidden_display")
+  button2.classList.add("hidden_display")
+  button3.classList.remove("hidden_display")
+  button4.classList.add("hidden_display")
+  non.classList.remove("hidden_display")
+  yes.classList.add("hidden_display")
+  fci_1.classList.remove("hidden_display")
+  fci_2.classList.add("hidden_display")
+  rfss_1.classList.remove("hidden_display")
+  rfss_2.classList.add("hidden_display")
+  rkf_1.classList.remove("hidden_display")
+  rkf_2.classList.add("hidden_display")
+  kls_1.classList.remove("hidden_display")
+  kls_2.classList.add("hidden_display")
+  setCookie("theme","light",{'max-age': 363300})
+})
+    </script>
+    <script>
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "0";
+          document.getElementById("hamburger_opener").classList.add("hidden_display")
+        }
+        
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+          document.getElementById("hamburger_opener").classList.remove("hidden_display")
+        }
+    </script>
+    <script>
+        var vision_changer = document.getElementById("vision_changer")
+var mobile_vision_changer = document.getElementById("mobile_vision_changer")
+var body = document.getElementById("body")
+
+checkCookie("low_vision")
+
+function checkCookie (name) {
+    if (getCookie(name) == "true") {
+        body.classList.add("low_vision")
+    } else {
+        body.classList.remove("low_vision")
+    } 
+}
+
+
+vision_changer.addEventListener("click", function(){
+    
+checkCookie("low_vision")
+function checkCookie (name) {
+    if (getCookie(name) == "true") {
+        body.classList.remove("low_vision")
+        setCookie("low_vision","false",{'max-age': 363300})
+    } else {
+        body.classList.add("low_vision")
+        setCookie("low_vision","true",{'max-age': 363300})
+    } 
+}
+})
+
+mobile_vision_changer.addEventListener("click", function(){
+    checkCookie("low_vision")
+    function checkCookie (name) {
+        if (getCookie(name) == "true") {
+            body.classList.remove("low_vision")
+            setCookie("low_vision","false",{'max-age': 363300})
+        } else {
+            body.classList.add("low_vision")
+            setCookie("low_vision","true",{'max-age': 363300})
+        } 
+    }
+})
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://www.powr.io/powr.js?platform=html"></script>
     <script>
     const myCarousel = new Carousel(document.querySelector(".carousel"), {
         // Options
       });</script>
+    <script>
+        [].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = function() {
+    img.removeAttribute('data-src');
+  };
+});
+
+[].forEach.call(document.querySelectorAll('iframe[data-src]'),    function(iframe) {
+  iframe.setAttribute('src', img.getAttribute('data-src'));
+  iframe.onload = function() {
+    iframe.removeAttribute('data-src');
+  };
+});
+    </script>
+    <script>
+        var menu_button_1 = document.getElementById("menu_button_1")
+var menu_button_2 = document.getElementById("menu_button_2")
+var menu_button_3 = document.getElementById("menu_button_3")
+var menu_button_4 = document.getElementById("menu_button_4")
+var menu_button_5 = document.getElementById("menu_button_5")
+var menu_button_6 = document.getElementById("menu_button_6")
+var menu_button_7 = document.getElementById("menu_button_7")
+var menu_button_8 = document.getElementById("menu_button_8")
+var menu_button_9 = document.getElementById("menu_button_9")
+var menu_button_10 = document.getElementById("menu_button_10")
+
+var phone_menu_button_1 = document.getElementById("phone_menu_button_1")
+var phone_menu_button_2 = document.getElementById("phone_menu_button_2")
+var phone_menu_button_3 = document.getElementById("phone_menu_button_3")
+var phone_menu_button_4 = document.getElementById("phone_menu_button_4")
+var phone_menu_button_5 = document.getElementById("phone_menu_button_5")
+var phone_menu_button_6 = document.getElementById("phone_menu_button_6")
+var phone_menu_button_7 = document.getElementById("phone_menu_button_7")
+var phone_menu_button_8 = document.getElementById("phone_menu_button_8")
+var phone_menu_button_9 = document.getElementById("phone_menu_button_9")
+var phone_menu_button_10 = document.getElementById("phone_menu_button_10")
+
+var page_1 = document.getElementById("page_1")
+var page_2 = document.getElementById("page_2")
+var page_3 = document.getElementById("page_3")
+var page_4 = document.getElementById("page_4")
+var page_5 = document.getElementById("page_5")
+var page_6 = document.getElementById("page_6")
+var page_7 = document.getElementById("page_7")
+var page_8 = document.getElementById("page_8")
+var page_9 = document.getElementById("page_9")
+var page_10 = document.getElementById("page_10")
+
+var lesson_button_1 = document.getElementById("lesson_button_1")
+var lesson_button_2 = document.getElementById("lesson_button_2")
+var lesson_button_3 = document.getElementById("lesson_button_3")
+var lesson_button_4 = document.getElementById("lesson_button_4")
+
+var lesson_page_1 = document.getElementById("lesson_page_1")
+var lesson_page_2 = document.getElementById("lesson_page_2")
+var lesson_page_3 = document.getElementById("lesson_page_3")
+var lesson_page_4 = document.getElementById("lesson_page_4")
+var mobile_lesson_page_1 = document.getElementById("lesson_page_1")
+var mobile_lesson_page_2 = document.getElementById("lesson_page_2")
+var mobile_lesson_page_3 = document.getElementById("lesson_page_3")
+var mobile_lesson_page_4 = document.getElementById("lesson_page_4")
+
+var useful_button_1 = document.getElementById("useful_button_1")
+var useful_button_2 = document.getElementById("useful_button_2")
+var useful_button_3 = document.getElementById("useful_button_3")
+var useful_button_4 = document.getElementById("useful_button_4")
+var useful_button_5 = document.getElementById("useful_button_5")
+
+var useful_page_1 = document.getElementById("useful_page_1")
+var useful_page_2 = document.getElementById("useful_page_2")
+var useful_page_3 = document.getElementById("useful_page_3")
+var useful_page_4 = document.getElementById("useful_page_4")
+var useful_page_5 = document.getElementById("useful_page_5")
+
+page_2.classList.add("hidden_display")
+page_3.classList.add("hidden_display")  
+page_4.classList.add("hidden_display")   
+page_5.classList.add("hidden_display")  
+page_6.classList.add("hidden_display")
+page_7.classList.add("hidden_display")  
+page_8.classList.add("hidden_display")   
+page_9.classList.add("hidden_display")  
+page_10.classList.add("hidden_display")
+lesson_page_1.classList.add("hidden_display")
+lesson_page_2.classList.add("hidden_display")
+lesson_page_3.classList.add("hidden_display")
+lesson_page_4.classList.add("hidden_display")
+useful_page_1.classList.add("hidden_display")
+useful_page_2.classList.add("hidden_display")
+useful_page_3.classList.add("hidden_display")
+useful_page_4.classList.add("hidden_display")
+useful_page_5.classList.add("hidden_display")
+
+menu_button_1.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_1.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+
+    page_2.classList.add("hidden_display")
+    page_3.classList.add("hidden_display")  
+    page_4.classList.add("hidden_display")   
+    page_5.classList.add("hidden_display")  
+    page_6.classList.add("hidden_display")
+    page_7.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_1.classList.remove("hidden")
+    page_1.classList.add("active")
+    page_1.classList.remove("hidden_display")
+    page_1.classList.add("active_display")}, 1000);
+
+    document.title = 'Клуб Любителей Собак "Верный"';
+})
+
+menu_button_2.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_2.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_3.classList.add("hidden_display")  
+    page_4.classList.add("hidden_display")   
+    page_5.classList.add("hidden_display")  
+    page_6.classList.add("hidden_display")
+    page_7.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_2.classList.remove("hidden")
+    page_2.classList.add("active")
+    page_2.classList.remove("hidden_display")
+    page_2.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Вступить в клуб'
+})
+
+menu_button_3.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_3.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_4.classList.add("hidden_display")   
+    page_5.classList.add("hidden_display")  
+    page_6.classList.add("hidden_display")
+    page_7.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_3.classList.remove("hidden")
+    page_3.classList.add("active")
+    page_3.classList.remove("hidden_display")
+    page_3.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Услуги'
+})
+
+menu_button_4.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_4.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_5.classList.add("hidden_display")  
+    page_6.classList.add("hidden_display")
+    page_7.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_4.classList.remove("hidden")
+    page_4.classList.add("active")
+    page_4.classList.remove("hidden_display")
+    page_4.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Курсы'
+})
+
+menu_button_5.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_5.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_6.classList.add("hidden_display")
+    page_7.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_5.classList.remove("hidden")
+    page_5.classList.add("active")
+    page_5.classList.remove("hidden_display")
+    page_5.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Контакты'
+})
+
+menu_button_6.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_6.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_7.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_6.classList.remove("hidden")
+    page_6.classList.add("active")
+    page_6.classList.remove("hidden_display")
+    page_6.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Полезно'
+})
+
+menu_button_7.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_7.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_7.classList.remove("hidden")
+    page_7.classList.add("active")
+    page_7.classList.remove("hidden_display")
+    page_7.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Хендлинг зал'
+})
+
+menu_button_8.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_8.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_8.classList.remove("hidden")
+    page_8.classList.add("active")
+    page_8.classList.remove("hidden_display")
+    page_8.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Привелегии клуба'
+})
+
+menu_button_9.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_9.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_8.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_9.classList.remove("hidden")
+    page_9.classList.add("active")
+    page_9.classList.remove("hidden_display")
+    page_9.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Наши партнёры'
+})
+
+menu_button_10.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_8.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_10.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_10.classList.remove("hidden")
+    page_10.classList.add("active")
+    page_10.classList.remove("hidden_display")
+    page_10.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Мероприятия'
+})
+
+phone_menu_button_1.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_1.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+
+    page_2.classList.add("hidden_display")
+    page_3.classList.add("hidden_display")  
+    page_4.classList.add("hidden_display")   
+    page_5.classList.add("hidden_display")  
+    page_6.classList.add("hidden_display")
+    page_7.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_1.classList.remove("hidden")
+    page_1.classList.add("active")
+    page_1.classList.remove("hidden_display")
+    page_1.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный"'
+})
+
+phone_menu_button_2.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_2.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_3.classList.add("hidden_display")  
+    page_4.classList.add("hidden_display")   
+    page_5.classList.add("hidden_display")  
+    page_6.classList.add("hidden_display")
+    page_7.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_2.classList.remove("hidden")
+    page_2.classList.add("active")
+    page_2.classList.remove("hidden_display")
+    page_2.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Вступить в клуб'
+})
+
+phone_menu_button_3.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_3.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_4.classList.add("hidden_display")   
+    page_5.classList.add("hidden_display")  
+    page_6.classList.add("hidden_display")
+    page_7.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_3.classList.remove("hidden")
+    page_3.classList.add("active")
+    page_3.classList.remove("hidden_display")
+    page_3.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Услуги'
+})
+
+phone_menu_button_4.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_4.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_5.classList.add("hidden_display")  
+    page_6.classList.add("hidden_display")
+    page_7.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_4.classList.remove("hidden")
+    page_4.classList.add("active")
+    page_4.classList.remove("hidden_display")
+    page_4.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Курсы'
+})
+
+phone_menu_button_5.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_5.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_6.classList.add("hidden_display")
+    page_7.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_5.classList.remove("hidden")
+    page_5.classList.add("active")
+    page_5.classList.remove("hidden_display")
+    page_5.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Контакты'
+})
+
+phone_menu_button_6.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_6.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_7.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_6.classList.remove("hidden")
+    page_6.classList.add("active")
+    page_6.classList.remove("hidden_display")
+    page_6.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Полезно'
+})
+
+phone_menu_button_7.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_7.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_7.classList.remove("hidden")
+    page_7.classList.add("active")
+    page_7.classList.remove("hidden_display")
+    page_7.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Хендлинг зал'
+})
+
+phone_menu_button_8.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_8.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_8.classList.remove("hidden")
+    page_8.classList.add("active")
+    page_8.classList.remove("hidden_display")
+    page_8.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Привелегии клуба'
+})
+
+phone_menu_button_9.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_9.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_8.classList.add("hidden_display")  
+    page_10.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_9.classList.remove("hidden")
+    page_9.classList.add("active")
+    page_9.classList.remove("hidden_display")
+    page_9.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Наши партнёры'
+})
+
+phone_menu_button_10.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_8.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {page_10.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+    /* Show page we go to */
+    page_10.classList.remove("hidden")
+    page_10.classList.add("active")
+    page_10.classList.remove("hidden_display")
+    page_10.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Мероприятия'
+})
+
+lesson_button_1.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {lesson_page_1.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    lesson_page_1.classList.remove("hidden")
+    lesson_page_1.classList.add("active")
+    lesson_page_1.classList.remove("hidden_display")
+    lesson_page_1.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | ОКД - Общий Курс Дрессировки'
+})
+
+lesson_button_2.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {lesson_page_2.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    lesson_page_2.classList.remove("hidden")
+    lesson_page_2.classList.add("active")
+    lesson_page_2.classList.remove("hidden_display")
+    lesson_page_2.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Курс "СОЦИАЛИЗАЦИЯ ЩЕНКА"'
+})
+
+lesson_button_3.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {lesson_page_3.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    lesson_page_3.classList.remove("hidden")
+    lesson_page_3.classList.add("active")
+    lesson_page_3.classList.remove("hidden_display")
+    lesson_page_3.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | ОКП - Общий Курс Послушания'
+})
+
+lesson_button_4.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {lesson_page_4.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    lesson_page_4.classList.remove("hidden")
+    lesson_page_4.classList.add("active")
+    lesson_page_4.classList.remove("hidden_display")
+    lesson_page_4.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | ОКП - Продвинутый Курс Послушания'
+})
+
+mobile_lesson_button_1.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {lesson_page_1.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    lesson_page_1.classList.remove("hidden")
+    lesson_page_1.classList.add("active")
+    lesson_page_1.classList.remove("hidden_display")
+    lesson_page_1.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | ОКД - Общий Курс Дрессировки'
+})
+
+mobile_lesson_button_2.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {lesson_page_2.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    lesson_page_2.classList.remove("hidden")
+    lesson_page_2.classList.add("active")
+    lesson_page_2.classList.remove("hidden_display")
+    lesson_page_2.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Курс "СОЦИАЛИЗАЦИЯ ЩЕНКА"'
+})
+
+mobile_lesson_button_3.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {lesson_page_3.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    lesson_page_3.classList.remove("hidden")
+    lesson_page_3.classList.add("active")
+    lesson_page_3.classList.remove("hidden_display")
+    lesson_page_3.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | ОКП - Общий Курс Послушания'
+})
+
+mobile_lesson_button_4.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {lesson_page_4.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    lesson_page_4.classList.remove("hidden")
+    lesson_page_4.classList.add("active")
+    lesson_page_4.classList.remove("hidden_display")
+    lesson_page_4.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | ОКП - Продвинутый Курс Послушания'
+})
+
+useful_button_1.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {useful_page_1.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    useful_page_1.classList.remove("hidden")
+    useful_page_1.classList.add("active")
+    useful_page_1.classList.remove("hidden_display")
+    useful_page_1.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Ветеринарные службы города'
+})
+
+useful_button_2.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {useful_page_2.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    useful_page_2.classList.remove("hidden")
+    useful_page_2.classList.add("active")
+    useful_page_2.classList.remove("hidden_display")
+    useful_page_2.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Новости'
+})
+
+useful_button_3.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {useful_page_3.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    useful_page_3.classList.remove("hidden")
+    useful_page_3.classList.add("active")
+    useful_page_3.classList.remove("hidden_display")
+    useful_page_3.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Мероприятия'
+})
+
+useful_button_4.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {useful_page_4.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    useful_page_4.classList.remove("hidden")
+    useful_page_4.classList.add("active")
+    useful_page_4.classList.remove("hidden_display")
+    useful_page_4.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Породы собак'
+})
+
+useful_button_5.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+
+    setTimeout(() => {useful_page_5.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    useful_page_5.classList.remove("hidden")
+    useful_page_5.classList.add("active")
+    useful_page_5.classList.remove("hidden_display")
+    useful_page_5.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Галерея'
+})
+
+mobile_useful_button_1.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {useful_page_1.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    useful_page_1.classList.remove("hidden")
+    useful_page_1.classList.add("active")
+    useful_page_1.classList.remove("hidden_display")
+    useful_page_1.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Ветеринарные службы города'
+})
+
+mobile_useful_button_2.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {useful_page_2.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    useful_page_2.classList.remove("hidden")
+    useful_page_2.classList.add("active")
+    useful_page_2.classList.remove("hidden_display")
+    useful_page_2.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Новости'
+})
+
+mobile_useful_button_3.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {useful_page_3.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    useful_page_3.classList.remove("hidden")
+    useful_page_3.classList.add("active")
+    useful_page_3.classList.remove("hidden_display")
+    useful_page_3.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Мероприятия'
+})
+
+mobile_useful_button_4.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_5.classList.add("hidden")
+
+    setTimeout(() => {useful_page_4.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_5.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    useful_page_4.classList.remove("hidden")
+    useful_page_4.classList.add("active")
+    useful_page_4.classList.remove("hidden_display")
+    useful_page_4.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Породы собак'
+})
+
+mobile_useful_button_5.addEventListener("click", function(){
+    /* Hide other pages (opacity) */
+    page_1.classList.add("hidden")
+    page_2.classList.add("hidden")
+    page_3.classList.add("hidden")
+    page_4.classList.add("hidden")
+    page_5.classList.add("hidden")
+    page_6.classList.add("hidden")
+    page_7.classList.add("hidden")
+    page_8.classList.add("hidden")
+    page_9.classList.add("hidden")
+    page_10.classList.add("hidden")
+    lesson_page_1.classList.add("hidden")
+    lesson_page_2.classList.add("hidden")
+    lesson_page_3.classList.add("hidden")
+    lesson_page_4.classList.add("hidden")
+    useful_page_1.classList.add("hidden")
+    useful_page_2.classList.add("hidden")
+    useful_page_3.classList.add("hidden")
+    useful_page_4.classList.add("hidden")
+
+    setTimeout(() => {useful_page_5.classList.remove("hidden_display")}, 500)
+
+    setTimeout(() => {
+    /* Hide other pages (display) */
+    page_1.classList.add("hidden_display")   
+    page_2.classList.add("hidden_display")  
+    page_3.classList.add("hidden_display")   
+    page_4.classList.add("hidden_display")  
+    page_5.classList.add("hidden_display")
+    page_6.classList.add("hidden_display")  
+    page_7.classList.add("hidden_display")   
+    page_9.classList.add("hidden_display")  
+    page_8.classList.add("hidden_display")
+    page_10.classList.add("hidden_display")  
+    lesson_page_1.classList.add("hidden_display")
+    lesson_page_2.classList.add("hidden_display")
+    lesson_page_3.classList.add("hidden_display")
+    lesson_page_4.classList.add("hidden_display")
+    useful_page_1.classList.add("hidden_display")
+    useful_page_2.classList.add("hidden_display")
+    useful_page_3.classList.add("hidden_display")
+    useful_page_4.classList.add("hidden_display")
+
+
+    /* Show page we go to */
+    useful_page_5.classList.remove("hidden")
+    useful_page_5.classList.add("active")
+    useful_page_5.classList.remove("hidden_display")
+    useful_page_5.classList.add("active_display")}, 1000);
+    document.title = 'Клуб Любителей Собак "Верный" | Галерея'
+})
+    </script>
 </body>
 </html>
